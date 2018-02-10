@@ -127,10 +127,13 @@ function initializeTank(s) {
     botTanks[s][14] = 2;
 }
 initializeTankList();
+function makeHeadImage() {
+    
+}
 var tank = new Image();
 tank.src = "player/head04.png";
 var head = new Image();
-head.src = "player/head07.png";
+head.src = "player/head08.png";
 // slightly modified from popsic.io
 ////////////////////////////////////
 var offScreenCanvas = document.createElement('canvas');
