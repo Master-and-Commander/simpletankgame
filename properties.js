@@ -91,7 +91,7 @@ function initializeTank(s) {
     playerTanks[s][9] = 0;
     playerTanks[s][10] = 100;
     playerTanks[s][11] = 40;
-    playerTanks[s][12] = 70;
+    playerTanks[s][12] = 50;
     playerTanks[s][13] = 40;
     playerTanks[s][14] = 3;
 
@@ -130,7 +130,7 @@ initializeTankList();
 var tank = new Image();
 tank.src = "player/head04.png";
 var head = new Image();
-head.src = "player/head06.png";
+head.src = "player/head07.png";
 // slightly modified from popsic.io
 ////////////////////////////////////
 var offScreenCanvas = document.createElement('canvas');
@@ -141,10 +141,6 @@ function rotateAndCache(image, angle, w, h, swing1) {
     offScreenCanvas.height = size;
     offScreenContext.translate(size/2, size/2);
     offScreenContext.rotate(angle);
-    if (!swing1) {
-        offScreenContext.drawImage(image, -w/2 + w/5, -h/2, w - w/20, h - h/20 );
-    }
-    else
         offScreenContext.drawImage(image, -w/2, -h/2, w, h);
     document.getElementById("clown").innerHTML = "Hello darkness my old friend";
     return offScreenCanvas;
