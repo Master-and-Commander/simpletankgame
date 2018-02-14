@@ -48,6 +48,8 @@
 
 var canvas = document.getElementById("canvas01");
 var ctx = canvas.getContext("2d");
+ctx.height = canvas.height;
+ctx.width = canvas.width;
 var playerTanks = new Array(5);
 var botTanks = new Array(5);
 var started = false;
@@ -91,8 +93,8 @@ function initializeTank(s) {
     playerTanks[s][9] = 0;
     playerTanks[s][10] = 100;
     playerTanks[s][11] = 40;
-    playerTanks[s][12] = 50;
-    playerTanks[s][13] = 40;
+    playerTanks[s][12] = 54;
+    playerTanks[s][13] = 48;
     playerTanks[s][14] = 3;
 
     botTanks[s][0] = s + 1;
@@ -128,49 +130,51 @@ function initializeTank(s) {
 }
 initializeTankList();
 function makeHeadImage() {
-    
+
 }
 var tank = new Image();
 tank.src = "player/head04.png";
 var head = new Image();
-head.src = "player/head08.png";
-// slightly modified from popsic.io
+head.src = "player/turret02.png";
+// from popsic.io
 ////////////////////////////////////
 var offScreenCanvas = document.createElement('canvas');
 var offScreenContext = offScreenCanvas.getContext('2d');
-function rotateAndCache(image, angle, w, h, swing1) {
+function rotateAndCache(image, angle, w, h) {
     var size = Math.max(w, h) * Math.sqrt(2);
     offScreenCanvas.width = size;
     offScreenCanvas.height = size;
     offScreenContext.translate(size/2, size/2);
     offScreenContext.rotate(angle);
-        offScreenContext.drawImage(image, -w/2, -h/2, w, h);
+    offScreenContext.drawImage(image, -w/2, -h/2, w, h);
     document.getElementById("clown").innerHTML = "Hello darkness my old friend";
     return offScreenCanvas;
 }
-function drawRotated(x, y, image, radians, w, h, proportion, swing1){
+function drawRotated(x, y, image, radians, w, h, proportion){
     var size = Math.max(w, h) * Math.sqrt(2) * proportion;
     var numbs = size - size/2 - w/2 * proportion;
     var number = size - size/2 - h/2 * proportion;
-    var rotatedImage = rotateAndCache(image, radians, w * proportion, h * proportion, swing1);
+    var rotatedImage = rotateAndCache(image, radians, w * proportion, h * proportion);
     ctx.drawImage(rotatedImage, x - numbs - w/2 * proportion, y - number - h/2 * proportion);
 }
 ////////////////////////////////////
 function draw() {
     ctx.fillStyle = "green";
+
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(head, 100, 100);
     var turretx;
     var turrety;
     for(var i = 0; i < playerTanks.length; i++) {
         drawRotated(playerTanks[i][1], playerTanks[i][2], tank, playerTanks[i][3]  * (Math.PI / 180), playerTanks[i][10],
-            playerTanks[i][11], playerTanks[i][14], true);
+            playerTanks[i][11], playerTanks[i][14]);
         ctx.beginPath();
         turretx = playerTanks[i][1] + advance * Math.cos(playerTanks[i][3] * (Math.PI / 180));
         turrety = playerTanks[i][2] + advance * Math.sin(playerTanks[i][3]* (Math.PI / 180));
 
         drawRotated(turretx, turrety, head, (playerTanks[i][3] + playerTanks[i][4] ) * (Math.PI / 180),
-            playerTanks[i][12], playerTanks[i][13], playerTanks[i][14], false);
-        ctx.arc(turretx, turrety, 5, 0, 2*Math.PI, false);
+            playerTanks[i][12], playerTanks[i][13], playerTanks[i][14]);
+        ctx.arc(turretx, turrety, 5, 0, 2*Math.PI);
         ctx.stroke();
     }
 }
@@ -193,9 +197,12 @@ function handleBodyAngleMovement(s) {
     playerTanks[selected][2] = playerTanks[selected][2] + s * Math.sin(playerTanks[selected][3]* (Math.PI / 180));
 }
 function start() {
+    ctx.height = canvas.height;
+    ctx.width = canvas.width;
     window.addEventListener("keydown", move, false);
     //window.addEventListener("keyup", move2, false);
     setInterval(draw, 10);
+
 }
 
 window.addEventListener("load", start, false);

@@ -55,7 +55,6 @@ var canvas = document.getElementById("canvas01");
 var ctx = canvas.getContext("2d");
 var playerTanks = new Array(5);
 var botTanks = new Array(5);
-var started = false;
 var advance = -15;
 var bodyMovement = 3;
 var selected = 0;
@@ -63,16 +62,16 @@ var x = new Array();
 var lineList = new Array();
 var increment = 0;
 var numberOfCircles = 0;
-var currentCircleCount = 0;
-var currentCircle;
-var beginner;
 var counter = 0;
 var c = document.createElement("canvas");
-c.width = 500;
-c.height = 500;
+
 var ctx1 = c.getContext("2d");
 var tankImages = new Array(5);
-
+var numbOfPoints = 9;
+var limitx = 500;
+var limity = 500;
+c.width = limitx;
+c.height = limity;
 function nextStep()
 {
     var lefty = 400;
@@ -113,7 +112,7 @@ function nextStep()
     increment += 1;
     ctx1.moveTo(xone, yone);
     ctx1.lineTo(xtwo, ytwo);
-    ctx1.lineWidth = 2;
+    ctx1.lineWidth = 7;
     ctx1.strokeStyle = "#22283B";
     ctx1.stroke();
 
@@ -269,7 +268,7 @@ function connectTheDots(target, originone, origintwo)
     increment += 1;
     ctx1.moveTo(x[originone][0], x[originone][1]);
     ctx1.lineTo(x[target][0], x[target][1]);
-    ctx1.lineWidth = 2;
+    ctx1.lineWidth = 7;
     ctx1.strokeStyle = "#22283B";
     ctx1.stroke();
 
@@ -289,13 +288,13 @@ function placeADot()
 {
 
 
-    ctx1.clearRect(0,0,500,500);
-    /*
-    var peasant = Math.random() *  500;
-    var clown = Math.random() * 500;
-    while (numberOfCircles < 20) {
-        peasant = Math.random() *  500;
-        clown = Math.random() * 500;
+    ctx1.clearRect(0,0,limitx,limity);
+
+    var peasant = Math.random() *  limitx;
+    var clown = Math.random() * limity;
+    while (numberOfCircles < numbOfPoints) {
+        peasant = Math.random() *  limitx;
+        clown = Math.random() * limity;
         x[counter] = new Array(2);
         x[counter][0] = peasant;
         x[counter][1] = clown;
@@ -309,15 +308,16 @@ function placeADot()
     nextStep();
     numberOfCircles = 0;
     counter = 0;
-    */
-    ctx1.strokeStyle = "#9EAFB9";ctx1.lineWidth = 2;ctx1.beginPath();ctx1.moveTo(125,178); ctx1.lineTo(185,392);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(125,178); ctx1.lineTo(127,66);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(185,392); ctx1.lineTo(127,66);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(125,178); ctx1.lineTo(128,296);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(185,392); ctx1.lineTo(128,296);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(267,331); ctx1.lineTo(321,188);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(267,331); ctx1.lineTo(320,66);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(321,188); ctx1.lineTo(320,66);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(267,331); ctx1.lineTo(321,234);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(321,188); ctx1.lineTo(321,234);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(167,283); ctx1.lineTo(264,326);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(167,283); ctx1.lineTo(216,226);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(264,326); ctx1.lineTo(216,226);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(127,67); ctx1.lineTo(280,62);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(127,67); ctx1.lineTo(218,42);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(280,62); ctx1.lineTo(218,42);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(127,67); ctx1.lineTo(189,49);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(218,42); ctx1.lineTo(189,49);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(218,42); ctx1.lineTo(248,46);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(280,62); ctx1.lineTo(248,46);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(127,67); ctx1.lineTo(216,226);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(280,62); ctx1.lineTo(216,226);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(250,45); ctx1.lineTo(321,62);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(250,45); ctx1.lineTo(300,48);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(321,62); ctx1.lineTo(300,48);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(84,381); ctx1.lineTo(187,394);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(84,381); ctx1.lineTo(121,174);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(187,394); ctx1.lineTo(121,174);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(84,381); ctx1.lineTo(87,322);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(121,174); ctx1.lineTo(87,322);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(84,381); ctx1.lineTo(141,480);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(187,394); ctx1.lineTo(141,480);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(265,467); ctx1.lineTo(336,334);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(265,467); ctx1.lineTo(323,236);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(336,334); ctx1.lineTo(323,236);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(265,467); ctx1.lineTo(268,391);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(323,236); ctx1.lineTo(268,391);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(323,236); ctx1.lineTo(335,292);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(336,334); ctx1.lineTo(335,292);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(265,467); ctx1.lineTo(316,401);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(336,334); ctx1.lineTo(316,401);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(247,213); ctx1.lineTo(280,196);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(247,213); ctx1.lineTo(258,180);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(280,196); ctx1.lineTo(258,180);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(247,213); ctx1.lineTo(247,192);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(258,180); ctx1.lineTo(247,192);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(258,180); ctx1.lineTo(273,180);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(280,196); ctx1.lineTo(273,180);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(247,213); ctx1.lineTo(262,222);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(280,196); ctx1.lineTo(262,222);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(262,222); ctx1.lineTo(277,214);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(280,196); ctx1.lineTo(277,214);ctx1.stroke();
 
     return convertCanvasToImage(c);
 }
-
+var img = new Image();
+img.src = 'player/ex01.png';
 function convertCanvasToImage(canvas) {
+    ctx1.strokeStyle = "#9EAFB9"; ctx1.lineWidth = 7;ctx1.beginPath();ctx1.moveTo(98,110); ctx1.lineTo(187,39);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(98,110); ctx1.lineTo(178,477);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(187,39); ctx1.lineTo(178,477);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(98,110); ctx1.lineTo(103,295);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(178,477); ctx1.lineTo(103,295);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(333,482); ctx1.lineTo(450,82);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(333,482); ctx1.lineTo(348,37);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(450,82); ctx1.lineTo(348,37);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(333,482); ctx1.lineTo(449,312);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(450,82); ctx1.lineTo(449,312);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(188,39); ctx1.lineTo(348,36);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(188,39); ctx1.lineTo(219,24);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(348,36); ctx1.lineTo(219,24);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(219,24); ctx1.lineTo(300,25);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(348,36); ctx1.lineTo(300,25);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(219,24); ctx1.lineTo(260,24);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(300,25); ctx1.lineTo(260,24);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(260,24); ctx1.lineTo(300,25);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(348,36); ctx1.lineTo(300,25);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(181,360); ctx1.lineTo(337,355);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(181,360); ctx1.lineTo(216,318);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(337,355); ctx1.lineTo(216,318);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(216,318); ctx1.lineTo(281,323);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(337,355); ctx1.lineTo(281,323);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(181,360); ctx1.lineTo(275,368);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(337,355); ctx1.lineTo(275,368);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(181,360); ctx1.lineTo(212,364);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(275,368); ctx1.lineTo(212,364);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(212,362); ctx1.lineTo(216,419);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(216,418); ctx1.lineTo(290,414);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(289,413); ctx1.lineTo(313,360);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(224,418); ctx1.lineTo(226,563);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(277,413); ctx1.lineTo(279,562);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(229,562); ctx1.lineTo(277,561);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(211,536); ctx1.lineTo(240,550);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(211,536); ctx1.lineTo(238,465);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(240,550); ctx1.lineTo(238,465);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(211,536); ctx1.lineTo(213,490);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(238,465); ctx1.lineTo(213,490);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(259,464); ctx1.lineTo(285,525);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(259,464); ctx1.lineTo(285,490);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(285,525); ctx1.lineTo(285,490);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(259,464); ctx1.lineTo(261,547);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(285,525); ctx1.lineTo(261,547);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(251,175); ctx1.lineTo(322,171);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(251,175); ctx1.lineTo(289,83);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(322,171); ctx1.lineTo(289,83);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(251,175); ctx1.lineTo(258,126);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(289,83); ctx1.lineTo(258,126);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(289,83); ctx1.lineTo(319,121);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(322,171); ctx1.lineTo(319,121);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(251,175); ctx1.lineTo(288,209);ctx1.stroke();ctx1.beginPath();ctx1.moveTo(322,171); ctx1.lineTo(288,209);ctx1.stroke();
     var image = new Image();
-    image.src = canvas.toDataURL("image/png");
+    image.src = c.toDataURL("image/png");
+    document.write('<img src="'+image+'"/>');
     return image;
 }
 
@@ -363,11 +363,11 @@ function initializeTank(s) {
     }
     playerTanks[s][8] = 1;
     playerTanks[s][9] = 0;
-    playerTanks[s][10] = 100;
+    playerTanks[s][10] = 80;
     playerTanks[s][11] = 40;
-    playerTanks[s][12] = 50;
+    playerTanks[s][12] = 60;
     playerTanks[s][13] = 50;
-    playerTanks[s][14] = 3;
+    playerTanks[s][14] = 2;
 
     botTanks[s][0] = s + 1;
     botTanks[s][1] = 100;
