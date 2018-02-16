@@ -94,7 +94,7 @@ function start() {
     ctx.stroke();
     //window.addEventListener("mousemove", move, false);
     window.addEventListener("keydown", goAhead, false);
-    setInterval(draw, 100);
+    setInterval(redraw, 100);
 }
 
 window.addEventListener("load", start, false);
