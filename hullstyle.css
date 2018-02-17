@@ -1,0 +1,53 @@
+body
+{
+    background-color: #E6F0EF;
+    text-align: center;
+    color: #9EAFB9;
+    font-size: 1.5em;
+
+}
+
+canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.theb {
+    float: right;
+    text-align:center;
+
+}
+button {
+    font-family: myFirstFont;
+    width: 10em;
+    margin-bottom: 1em;
+    text-align:center;
+    display: block;
+    border: 1em solid #9EAFB9;
+    color: #E6F0EF;
+    background: #9EAFB9;
+    border-radius: 2em;
+    text-decoration: none;
+
+}
+
+button:hover {
+
+    border: 1em solid #22283B;
+    color: #E6F0EF;
+    background: #22283B;
+    border-radius: 2em;
+    text-decoration: none;
+
+}
+
+textarea {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('PfefferMediaeval.otf');
+}
