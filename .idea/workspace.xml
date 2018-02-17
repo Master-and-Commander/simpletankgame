@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91df093b-6bb7-4ed4-9056-315cb8ceb4ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/hullstyle.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/makeShapes.html" afterPath="$PROJECT_DIR$/makeShapes.html" />
-      <change beforePath="$PROJECT_DIR$/makeShapes.js" afterPath="$PROJECT_DIR$/makeShapes.js" />
       <change beforePath="$PROJECT_DIR$/makeShapes2.js" afterPath="$PROJECT_DIR$/makeShapes2.js" />
       <change beforePath="$PROJECT_DIR$/playground.js" afterPath="$PROJECT_DIR$/playground.js" />
-      <change beforePath="$PROJECT_DIR$/properties.js" afterPath="$PROJECT_DIR$/properties.js" />
+      <change beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,27 +16,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playground.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/playground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="314" column="34" lean-forward="false" selection-start-line="314" selection-start-column="34" selection-end-line="314" selection-end-column="34" />
               <folding>
                 <element signature="e#24#246#0" expanded="false" />
                 <element signature="e#272#785#0" expanded="false" />
                 <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
-                <element signature="n#!!block;n#startupFirst#0" expanded="false" />
-                <element signature="n#!!block;n#startupBodyFirst#0" expanded="false" />
                 <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-                <element signature="n#!!block;n#reConfigure1#0" expanded="false" />
                 <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
-                <element signature="e#10134#10275#0" expanded="false" />
+                <element signature="e#6538#6679#0" expanded="false" />
                 <element signature="n#!!block;n#initializeTank#0" expanded="false" />
-                <element signature="e#11413#11890#0" expanded="false" />
+                <element signature="e#7817#8294#0" expanded="false" />
                 <element signature="n#!!block;n#rotateAndCache#0" expanded="false" />
                 <element signature="n#!!block;n#drawRotated#0" expanded="false" />
-                <element signature="e#13425#14073#0" expanded="false" />
-                <element signature="e#14368#14469#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,28 +40,28 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="170">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makeShapes2.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="makeShapes2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makeShapes2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="272">
+              <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding>
                 <element signature="e#89#214#0" expanded="false" />
                 <element signature="e#215#247#0" expanded="false" />
-                <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-                <element signature="n#!!block;n#handleA#0" expanded="false" />
-                <element signature="n#!!block;n#handleS#0" expanded="false" />
-                <element signature="e#1237#1391#0" expanded="false" />
                 <element signature="n#!!block;n#handleD#0" expanded="false" />
                 <element signature="n#!!block;n#handleF#0" expanded="false" />
+                <element signature="n#!!block;n#handleZ#0" expanded="false" />
+                <element signature="n#!!block;n#handleX#0" expanded="false" />
+                <element signature="n#!!block;n#finish#0" expanded="false" />
                 <element signature="n#!!block;n#move#0" expanded="false" />
+                <element signature="n#!!block;n#reConfigure#0" expanded="false" />
                 <element signature="n#!!block;n#init#0" expanded="false" />
               </folding>
             </state>
@@ -79,9 +71,35 @@
       <file leaf-file-name="makeShapes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makeShapes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="81" lean-forward="false" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+            <state relative-caret-position="170">
+              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="makeShapes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/makeShapes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="273" column="31" lean-forward="true" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
+              <folding>
+                <element signature="e#89#214#0" expanded="false" />
+                <element signature="e#215#247#0" expanded="false" />
+                <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+                <element signature="n#!!block;n#handleA#0" expanded="false" />
+                <element signature="n#!!block;n#handleS#0" expanded="false" />
+                <element signature="n#!!block;n#handleD#0" expanded="false" />
+                <element signature="n#!!block;n#handleF#0" expanded="false" />
+                <element signature="n#!!block;n#handleZ#0" expanded="false" />
+                <element signature="n#!!block;n#handleX#0" expanded="false" />
+                <element signature="n#!!block;n#finish#0" expanded="false" />
+                <element signature="e#3413#3929#0" expanded="false" />
+                <element signature="n#!!block;n#handleP#0" expanded="false" />
+                <element signature="n#!!block;n#handleO#0" expanded="false" />
+                <element signature="n#!!block;n#handleI#0" expanded="false" />
+                <element signature="n#!!block;n#init#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,10 +154,12 @@
       <find>%</find>
       <find>write</find>
       <find>fire</find>
+      <find>&quot;s</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>1</replace>
+      <replace>name + &quot;[s]</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -149,12 +169,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/player/hullpractice.js" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/turretmover.js" />
-        <option value="$PROJECT_DIR$/makeShapes.html" />
         <option value="$PROJECT_DIR$/hullstyle.css" />
         <option value="$PROJECT_DIR$/properties.js" />
         <option value="$PROJECT_DIR$/makeShapes.js" />
+        <option value="$PROJECT_DIR$/makeShapes.html" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/makeShapes2.js" />
         <option value="$PROJECT_DIR$/playground.js" />
       </list>
@@ -248,7 +268,7 @@
       <workItem from="1517979306922" duration="27408000" />
       <workItem from="1518119221003" duration="8575000" />
       <workItem from="1518198896130" duration="102834000" />
-      <workItem from="1518807103153" duration="13587000" />
+      <workItem from="1518807103153" duration="17012000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized tank arrays with their appropriate properties">
       <created>1517894979362</created>
@@ -278,11 +298,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518750191070</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="arrays are much cleaner">
+      <created>1518830473579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1518830473580</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162440000" />
+    <option name="totallyTimeSpent" value="165865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -367,7 +394,8 @@
     <MESSAGE value="Image moves somewhat like a tank." />
     <MESSAGE value="Way to make shapes" />
     <MESSAGE value="can make new things" />
-    <option name="LAST_COMMIT_MESSAGE" value="can make new things" />
+    <MESSAGE value="arrays are much cleaner" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrays are much cleaner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -407,18 +435,13 @@
             <element signature="e#24#246#0" expanded="false" />
             <element signature="e#272#785#0" expanded="false" />
             <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
-            <element signature="n#!!block;n#startupFirst#0" expanded="false" />
-            <element signature="n#!!block;n#startupBodyFirst#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#reConfigure1#0" expanded="false" />
             <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
-            <element signature="e#10134#10275#0" expanded="false" />
+            <element signature="e#6538#6679#0" expanded="false" />
             <element signature="n#!!block;n#initializeTank#0" expanded="false" />
-            <element signature="e#11413#11890#0" expanded="false" />
+            <element signature="e#7817#8294#0" expanded="false" />
             <element signature="n#!!block;n#rotateAndCache#0" expanded="false" />
             <element signature="n#!!block;n#drawRotated#0" expanded="false" />
-            <element signature="e#13425#14073#0" expanded="false" />
-            <element signature="e#14368#14469#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -446,13 +469,13 @@
           <folding>
             <element signature="e#89#214#0" expanded="false" />
             <element signature="e#215#247#0" expanded="false" />
-            <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
-            <element signature="n#!!block;n#handleS#0" expanded="false" />
-            <element signature="e#1237#1391#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
+            <element signature="n#!!block;n#handleZ#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#finish#0" expanded="false" />
             <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
             <element signature="n#!!block;n#init#0" expanded="false" />
           </folding>
         </state>
@@ -497,18 +520,13 @@
             <element signature="e#24#246#0" expanded="false" />
             <element signature="e#272#785#0" expanded="false" />
             <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
-            <element signature="n#!!block;n#startupFirst#0" expanded="false" />
-            <element signature="n#!!block;n#startupBodyFirst#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#reConfigure1#0" expanded="false" />
             <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
-            <element signature="e#10134#10275#0" expanded="false" />
+            <element signature="e#6538#6679#0" expanded="false" />
             <element signature="n#!!block;n#initializeTank#0" expanded="false" />
-            <element signature="e#11413#11890#0" expanded="false" />
+            <element signature="e#7817#8294#0" expanded="false" />
             <element signature="n#!!block;n#rotateAndCache#0" expanded="false" />
             <element signature="n#!!block;n#drawRotated#0" expanded="false" />
-            <element signature="e#13425#14073#0" expanded="false" />
-            <element signature="e#14368#14469#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -544,18 +562,13 @@
             <element signature="e#24#246#0" expanded="false" />
             <element signature="e#272#785#0" expanded="false" />
             <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
-            <element signature="n#!!block;n#startupFirst#0" expanded="false" />
-            <element signature="n#!!block;n#startupBodyFirst#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#reConfigure1#0" expanded="false" />
             <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
-            <element signature="e#10134#10275#0" expanded="false" />
+            <element signature="e#6538#6679#0" expanded="false" />
             <element signature="n#!!block;n#initializeTank#0" expanded="false" />
-            <element signature="e#11413#11890#0" expanded="false" />
+            <element signature="e#7817#8294#0" expanded="false" />
             <element signature="n#!!block;n#rotateAndCache#0" expanded="false" />
             <element signature="n#!!block;n#drawRotated#0" expanded="false" />
-            <element signature="e#13425#14073#0" expanded="false" />
-            <element signature="e#14368#14469#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -609,22 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hullstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/properties.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -648,10 +645,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hullstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/makeShapes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="172" column="12" lean-forward="true" selection-start-line="172" selection-start-column="12" selection-end-line="174" selection-end-column="45" />
+        <state relative-caret-position="566">
+          <caret line="273" column="31" lean-forward="true" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
           <folding>
             <element signature="e#89#214#0" expanded="false" />
             <element signature="e#215#247#0" expanded="false" />
@@ -667,7 +672,6 @@
             <element signature="n#!!block;n#handleP#0" expanded="false" />
             <element signature="n#!!block;n#handleO#0" expanded="false" />
             <element signature="n#!!block;n#handleI#0" expanded="false" />
-            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
             <element signature="n#!!block;n#init#0" expanded="false" />
           </folding>
         </state>
@@ -675,51 +679,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/makeShapes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="81" lean-forward="false" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        <state relative-caret-position="170">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playground.js">
+    <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#246#0" expanded="false" />
-            <element signature="e#272#785#0" expanded="false" />
-            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
-            <element signature="n#!!block;n#startupFirst#0" expanded="false" />
-            <element signature="n#!!block;n#startupBodyFirst#0" expanded="false" />
-            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#reConfigure1#0" expanded="false" />
-            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
-            <element signature="e#10134#10275#0" expanded="false" />
-            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
-            <element signature="e#11413#11890#0" expanded="false" />
-            <element signature="n#!!block;n#rotateAndCache#0" expanded="false" />
-            <element signature="n#!!block;n#drawRotated#0" expanded="false" />
-            <element signature="e#13425#14073#0" expanded="false" />
-            <element signature="e#14368#14469#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/makeShapes2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="272">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding>
             <element signature="e#89#214#0" expanded="false" />
             <element signature="e#215#247#0" expanded="false" />
-            <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
-            <element signature="n#!!block;n#handleS#0" expanded="false" />
-            <element signature="e#1237#1391#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
+            <element signature="n#!!block;n#handleZ#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#finish#0" expanded="false" />
             <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
             <element signature="n#!!block;n#init#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="314" column="34" lean-forward="false" selection-start-line="314" selection-start-column="34" selection-end-line="314" selection-end-column="34" />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="e#272#785#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="e#6538#6679#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="e#7817#8294#0" expanded="false" />
+            <element signature="n#!!block;n#rotateAndCache#0" expanded="false" />
+            <element signature="n#!!block;n#drawRotated#0" expanded="false" />
           </folding>
         </state>
       </provider>

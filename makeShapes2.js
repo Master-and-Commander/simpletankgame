@@ -53,7 +53,7 @@ function initialize() {
 }
 function handleA() {
     for(var i  = 1; i < complete.length; i++) {
-        if(complete[i][0] == 0 && Math.abs(complete[i][1] - x) < 5 && Math.abs(complete[i][2] - y) < 5)
+        if(complete[i][0] == 0 && Math.abs(complete[i][1] - x) < 10 && Math.abs(complete[i][2] - y) < 10)
         {
             begId = i;
         }
@@ -62,7 +62,7 @@ function handleA() {
 }
 function handleS() {
     for(var i  = 1; i < complete.length; i++) {
-        if(complete[i][0] == 0 && Math.abs(complete[i][1] - x) < 5 && Math.abs(complete[i][2] - y) < 5)
+        if(complete[i][0] == 0 && Math.abs(complete[i][1] - x) < 10 && Math.abs(complete[i][2] - y) < 10)
         {
             tarId = i;
         }
@@ -230,46 +230,46 @@ function init() {
 }
 var prompt;
 
-
+var name = "placements"
 var numb = "01";
 function writeBetter() {
     prompt = "";
     prompt += "function setEqualTo"+numb+"(s) {\n";
-    prompt += "s = new Array();\n";
-    prompt += "s[0] = new Array();\n";
-    prompt += "s[0][0]= "+ complete[0][0] +";\n";
-    prompt += "s[0][1]= "+ complete[0][1] +";\n";
-    prompt += "s[0][2]= "+ complete[0][2] +";\n";
-    prompt += "s[0][3] = new Array();\n";
+    prompt += name + "[s] = new Array();\n";
+    prompt += name + "[s][0] = new Array();\n";
+    prompt += name + "[s][0][0]= "+ complete[0][0] +";\n";
+    prompt += name + "[s][0][1]= "+ complete[0][1] +";\n";
+    prompt += name + "[s][0][2]= "+ complete[0][2] +";\n";
+    prompt += name + "[s][0][3] = new Array();\n";
     for(var j = 0; j < gunCounter; j++) {
-        prompt += "s[0][3]["+j+"]= "+ complete[0][3][j] +";\n";
+        prompt += name + "[s][0][3]["+j+"]= "+ complete[0][3][j] +";\n";
     }
 
     for(var i = 1; i < complete.length; i++) {
         if(complete[i][0] == 0) {
-            prompt += "s["+i+"] = new Array();\n";
-            prompt += "s["+i+"][0] = "+ complete[i][0] +";\n";
-            prompt += "s["+i+"][1] = "+ complete[i][1] +";\n";
-            prompt += "s["+i+"][2] = "+ complete[i][2] +";\n";
-            prompt += "s["+i+"][3] = new Array();\n";
-            prompt += "s["+i+"][4] = "+ complete[i][4] +";\n";
-            prompt += "s["+i+"][5] = new Array();\n";
-            prompt += "s["+i+"][5][0] = "+ complete[i][5][0] +";\n";
-            prompt += "s["+i+"][5][1] = "+ complete[i][5][1] +";\n";
+            prompt += name + "[s]["+i+"] = new Array();\n";
+            prompt += name + "[s]["+i+"][0] = "+ complete[i][0] +";\n";
+            prompt += name + "[s]["+i+"][1] = "+ complete[i][1] +";\n";
+            prompt += name + "[s]["+i+"][2] = "+ complete[i][2] +";\n";
+            prompt += name + "[s]["+i+"][3] = new Array();\n";
+            prompt += name + "[s]["+i+"][4] = "+ complete[i][4] +";\n";
+            prompt += name + "[s]["+i+"][5] = new Array();\n";
+            prompt += name + "[s]["+i+"][5][0] = "+ complete[i][5][0] +";\n";
+            prompt += name + "[s]["+i+"][5][1] = "+ complete[i][5][1] +";\n";
 
             for(var k = 0; k < complete[i][3].length; k++) {
-                prompt += "s["+i+"][3]["+k+"] = new Array();\n";
-                prompt += "s["+i+"][3]["+k+"][0] =  "+ complete[i][3][k][0] +";\n";
-                prompt += "s["+i+"][3]["+k+"][1] =  "+ complete[i][3][k][1] +";\n";
-                prompt += "s["+i+"][3]["+k+"][2] =  "+ complete[i][3][k][2] +";\n";
+                prompt += name + "[s]["+i+"][3]["+k+"] = new Array();\n";
+                prompt += name + "[s]["+i+"][3]["+k+"][0] =  "+ complete[i][3][k][0] +";\n";
+                prompt += name + "[s]["+i+"][3]["+k+"][1] =  "+ complete[i][3][k][1] +";\n";
+                prompt += name + "[s]["+i+"][3]["+k+"][2] =  "+ complete[i][3][k][2] +";\n";
             }
         }
 
         else if(complete[i][0] == 2) {
-            prompt += "s["+i+"] = new Array();\n";
-            prompt += "s["+i+"][0] = "+ complete[i][0] +";\n";
-            prompt += "s["+i+"][1] = "+ complete[i][1] +";\n";
-            prompt += "s["+i+"][2] = "+ complete[i][2] +";\n";
+            prompt += name + "[s]["+i+"] = new Array();\n";
+            prompt += name + "[s]["+i+"][0] = "+ complete[i][0] +";\n";
+            prompt += name + "[s]["+i+"][1] = "+ complete[i][1] +";\n";
+            prompt += name + "[s]["+i+"][2] = "+ complete[i][2] +";\n";
         }
     }
     prompt += "}\n";

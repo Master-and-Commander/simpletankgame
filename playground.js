@@ -43,71 +43,118 @@
  * 3: width
  * 4: length
  */
-
+var placements = new Array();
 function setEqualTo01(s) {
-    s = new Array();
-    s[0] = new Array();
-    s[0][0]= 161;
-    s[0][1]= 67;
-    s[0][2]= 0;
-    s[0][3] = new Array();
-    s[1] = new Array();
-    s[1][0] = 0;
-    s[1][1] = 127;
-    s[1][2] = 58;
-    s[1][3] = new Array();
-    s[1][4] = 2;
-    s[1][5] = new Array();
-    s[1][5][0] = 35.17101079013795;
-    s[1][5][1] = 3.400363545553491;
-    s[1][3][0] = new Array();
-    s[1][3][0][0] =  2;
-    s[1][3][0][1] =  1;
-    s[1][3][0][2] =  1;
-    s[1][3][1] = new Array();
-    s[1][3][1][0] =  3;
-    s[1][3][1][1] =  1;
-    s[1][3][1][2] =  1;
-    s[2] = new Array();
-    s[2][0] = 0;
-    s[2][1] = 127;
-    s[2][2] = 58;
-    s[2][3] = new Array();
-    s[2][4] = 0;
-    s[2][5] = new Array();
-    s[2][5][0] = 35.17101079013795;
-    s[2][5][1] = 3.400363545553491;
-    s[3] = new Array();
-    s[3][0] = 0;
-    s[3][1] = 124;
-    s[3][2] = 219;
-    s[3][3] = new Array();
-    s[3][4] = 0;
-    s[3][5] = new Array();
-    s[3][5][0] = 156.43848631331102;
-    s[3][5][1] = 1.8095735190346076;
-    s[4] = new Array();
-    s[4][0] = 0;
-    s[4][1] = 198;
-    s[4][2] = 52;
-    s[4][3] = new Array();
-    s[4][4] = 1;
-    s[4][5] = new Array();
-    s[4][5][0] = 39.92492955535426;
-    s[4][5][1] = -0.3851575063634742;
-    s[4][3][0] = new Array();
-    s[4][3][0][0] =  5;
-    s[4][3][0][1] =  1;
-    s[4][3][0][2] =  1;
-    s[5] = new Array();
-    s[5][0] = 0;
-    s[5][1] = 202;
-    s[5][2] = 213;
-    s[5][3] = new Array();
-    s[5][4] = 0;
-    s[5][5] = new Array();
-    s[5][5][0] = 151.64761785138597;
-    s[5][5][1] = 1.2970256223316674;
+    placements[s] = new Array();
+    placements[s][0] = new Array();
+    placements[s][0][0]= 120;
+    placements[s][0][1]= 81;
+    placements[s][0][2]= 0;
+    placements[s][0][3] = new Array();
+    placements[s][1] = new Array();
+    placements[s][1][0] = 0;
+    placements[s][1][1] = 72;
+    placements[s][1][2] = 65;
+    placements[s][1][3] = new Array();
+    placements[s][1][4] = 1;
+    placements[s][1][5] = new Array();
+    placements[s][1][5][0] = 50.59644256269407;
+    placements[s][1][5][1] = 3.4633432079864352;
+    placements[s][1][3][0] = new Array();
+    placements[s][1][3][0][0] =  2;
+    placements[s][1][3][0][1] =  1;
+    placements[s][1][3][0][2] =  1;
+    placements[s][2] = new Array();
+    placements[s][2][0] = 0;
+    placements[s][2][1] = 204;
+    placements[s][2][2] = 54;
+    placements[s][2][3] = new Array();
+    placements[s][2][4] = 4;
+    placements[s][2][5] = new Array();
+    placements[s][2][5][0] = 88.23264701911646;
+    placements[s][2][5][1] = -0.31099828060554097;
+    placements[s][2][3][0] = new Array();
+    placements[s][2][3][0][0] =  3;
+    placements[s][2][3][0][1] =  1;
+    placements[s][2][3][0][2] =  1;
+    placements[s][2][3][1] = new Array();
+    placements[s][2][3][1][0] =  4;
+    placements[s][2][3][1][1] =  1;
+    placements[s][2][3][1][2] =  1;
+    placements[s][2][3][2] = new Array();
+    placements[s][2][3][2][0] =  5;
+    placements[s][2][3][2][1] =  1;
+    placements[s][2][3][2][2] =  1;
+    placements[s][2][3][3] = new Array();
+    placements[s][2][3][3][0] =  6;
+    placements[s][2][3][3][1] =  1;
+    placements[s][2][3][3][2] =  1;
+    placements[s][3] = new Array();
+    placements[s][3][0] = 0;
+    placements[s][3][1] = 204;
+    placements[s][3][2] = 54;
+    placements[s][3][3] = new Array();
+    placements[s][3][4] = 0;
+    placements[s][3][5] = new Array();
+    placements[s][3][5][0] = 88.23264701911646;
+    placements[s][3][5][1] = -0.31099828060554097;
+    placements[s][4] = new Array();
+    placements[s][4][0] = 0;
+    placements[s][4][1] = 204;
+    placements[s][4][2] = 54;
+    placements[s][4][3] = new Array();
+    placements[s][4][4] = 0;
+    placements[s][4][5] = new Array();
+    placements[s][4][5][0] = 88.23264701911646;
+    placements[s][4][5][1] = -0.31099828060554097;
+    placements[s][5] = new Array();
+    placements[s][5][0] = 0;
+    placements[s][5][1] = 204;
+    placements[s][5][2] = 54;
+    placements[s][5][3] = new Array();
+    placements[s][5][4] = 0;
+    placements[s][5][5] = new Array();
+    placements[s][5][5][0] = 88.23264701911646;
+    placements[s][5][5][1] = -0.31099828060554097;
+    placements[s][6] = new Array();
+    placements[s][6][0] = 0;
+    placements[s][6][1] = 248;
+    placements[s][6][2] = 93;
+    placements[s][6][3] = new Array();
+    placements[s][6][4] = 1;
+    placements[s][6][5] = new Array();
+    placements[s][6][5][0] = 128.56126943990557;
+    placements[s][6][5][1] = 0.09347678115858947;
+    placements[s][6][3][0] = new Array();
+    placements[s][6][3][0][0] =  7;
+    placements[s][6][3][0][1] =  1;
+    placements[s][6][3][0][2] =  1;
+    placements[s][7] = new Array();
+    placements[s][7][0] = 0;
+    placements[s][7][1] = 213;
+    placements[s][7][2] = 130;
+    placements[s][7][3] = new Array();
+    placements[s][7][4] = 1;
+    placements[s][7][5] = new Array();
+    placements[s][7][5][0] = 105.11898020814318;
+    placements[s][7][5][1] = 0.4849209950248673;
+    placements[s][7][3][0] = new Array();
+    placements[s][7][3][0][0] =  8;
+    placements[s][7][3][0][1] =  1;
+    placements[s][7][3][0][2] =  1;
+    placements[s][8] = new Array();
+    placements[s][8][0] = 0;
+    placements[s][8][1] = 72;
+    placements[s][8][2] = 116;
+    placements[s][8][3] = new Array();
+    placements[s][8][4] = 1;
+    placements[s][8][5] = new Array();
+    placements[s][8][5][0] = 59.405386961116584;
+    placements[s][8][5][1] = 2.511558744043878;
+    placements[s][8][3][0] = new Array();
+    placements[s][8][3][0][0] =  1;
+    placements[s][8][3][0][1] =  1;
+    placements[s][8][3][0][2] =  1;
 }
 
 
@@ -115,288 +162,41 @@ function setEqualTo01(s) {
 
 var bullet = new Array();
 var bc = 0;
-var A  = new Array();
-var B  = new Array();
-var C  = new Array();
+
 var prop = 1;
 var palette = new Array();
 palette[1] = "#000000";
-var A1  = new Array();
-var B1  = new Array();
-var C1  = new Array();
-function startupFirst() {
-    A[0] = new Array();
-    A[0][0] = 171;
-    A[0][1] = 113;
-    A[0][2] = 0;
-    A[1] = new Array();
-    A[1][0] = 50.774009099144415;
-    A[1][1] = 4.151701985401884;
-    A[2] = new Array();
-    A[2][0] = 59.61543424315552;
-    A[2][1] = 1.966877768359204;
-    A[3] = new Array();
-    A[3][0] = 58.69412236331676;
-    A[3][1] = 0.4026546535518728;
-    A[4] = new Array();
-    A[4][0] = 29.698484809834994;
-    A[4][1] = 2.356194490192345;
-    A[5] = new Array();
-    A[5][0] = 57.584720195551874;
-    A[5][1] = -0.3547056520109403;
-    A[6] = new Array();
-    A[6][0] = 28.0178514522438;
-    A[6][1] = 3.7493946497037536;
-    A[7] = new Array();
-    A[7][0] = 102.07840124139876;
-    A[7][1] = 0.03919560192705471;
-    A[8] = new Array();
-    A[8][0] = 99.12618221237011;
-    A[8][1] = 0.5404195002705842;
-    A[9] = new Array();
-    A[9][0] = 98.41239759298622;
-    A[9][1] = -0.44092424815916503;
-    A[10] = new Array();
-    A[10][0] = 104.01922899156675;
-    A[10][1] = 0.019228399099707208;
-    B[0]= new Array();
-    B[0][0]= new Array();
-    B[0][0][0]= 144;
-    B[0][0][1]= 70;
-    B[0][2] = new Array();
-    B[0][3]= 3;
-    B[0][2][0] = new Array();
-    B[0][2][0][0] = 1;
-    B[0][2][0][1] = 1;
-    B[0][2][0][2] = 1;
-    B[0][2][1] = new Array();
-    B[0][2][1][0] = 4;
-    B[0][2][1][1] = 1;
-    B[0][2][1][2] = 1;
-    B[0][2][2] = new Array();
-    B[0][2][2][0] = 8;
-    B[0][2][2][1] = 1;
-    B[0][2][2][2] = 1;
-    B[1]= new Array();
-    B[1][0]= new Array();
-    B[1][0][0]= 148;
-    B[1][0][1]= 168;
-    B[1][2] = new Array();
-    B[1][3]= 3;
-    B[1][2][0] = new Array();
-    B[1][2][0][0] = 1;
-    B[1][2][0][1] = 1;
-    B[1][2][0][2] = 1;
-    B[1][2][1] = new Array();
-    B[1][2][1][0] = 2;
-    B[1][2][1][1] = 1;
-    B[1][2][1][2] = 1;
-    B[1][2][2] = new Array();
-    B[1][2][2][0] = 7;
-    B[1][2][2][1] = 1;
-    B[1][2][2][2] = 1;
-    B[2]= new Array();
-    B[2][0]= new Array();
-    B[2][0][0]= 225;
-    B[2][0][1]= 136;
-    B[2][2] = new Array();
-    B[2][3]= 3;
-    B[2][2][0] = new Array();
-    B[2][2][0][0] = 2;
-    B[2][2][0][1] = 1;
-    B[2][2][0][2] = 1;
-    B[2][2][1] = new Array();
-    B[2][2][1][0] = 3;
-    B[2][2][1][1] = 1;
-    B[2][2][1][2] = 1;
-    B[2][2][2] = new Array();
-    B[2][2][2][0] = 6;
-    B[2][2][2][1] = 1;
-    B[2][2][2][2] = 1;
-    B[3]= new Array();
-    B[3][0]= new Array();
-    B[3][0][0]= 150;
-    B[3][0][1]= 134;
-    B[3][2] = new Array();
-    B[3][3]= 0;
-    B[4]= new Array();
-    B[4][0]= new Array();
-    B[4][0][0]= 225;
-    B[4][0][1]= 93;
-    B[4][2] = new Array();
-    B[4][3]= 2;
-    B[4][2][0] = new Array();
-    B[4][2][0][0] = 4;
-    B[4][2][0][1] = 1;
-    B[4][2][0][2] = 1;
-    B[4][2][1] = new Array();
-    B[4][2][1][0] = 5;
-    B[4][2][1][1] = 1;
-    B[4][2][1][2] = 1;
-    B[5]= new Array();
-    B[5][0]= new Array();
-    B[5][0][0]= 148;
-    B[5][0][1]= 97;
-    B[5][2] = new Array();
-    B[5][3]= 0;
-    B[6]= new Array();
-    B[6][0]= new Array();
-    B[6][0][0]= 273;
-    B[6][0][1]= 117;
-    B[6][2] = new Array();
-    B[6][3]= 1;
-    B[6][2][0] = new Array();
-    B[6][2][0][0] = 4;
-    B[6][2][0][1] = 1;
-    B[6][2][0][2] = 1;
-    B[7]= new Array();
-    B[7][0]= new Array();
-    B[7][0][0]= 256;
-    B[7][0][1]= 164;
-    B[7][2] = new Array();
-    B[7][3]= 2;
-    B[7][2][0] = new Array();
-    B[7][2][0][0] = 6;
-    B[7][2][0][1] = 1;
-    B[7][2][0][2] = 1;
-    B[7][2][1] = new Array();
-    B[7][2][1][0] = 0;
-    B[7][2][1][1] = 1;
-    B[7][2][1][2] = 1;
-    B[8]= new Array();
-    B[8][0]= new Array();
-    B[8][0][0]= 260;
-    B[8][0][1]= 71;
-    B[8][2] = new Array();
-    B[8][3]= 1;
-    B[8][2][0] = new Array();
-    B[8][2][0][0] = 9;
-    B[8][2][0][1] = 1;
-    B[8][2][0][2] = 1;
-    B[9]= new Array();
-    B[9][0]= new Array();
-    B[9][0][0]= 275;
-    B[9][0][1]= 115;
-    B[9][2] = new Array();
-    B[9][3]= 0;
-
-}
-function startupBodyFirst() {
-    A1[0] = new Array();
-    A1[0][0] = 164;
-    A1[0][1] = 62;
-    A1[0][2] = 0;
-    A1[1] = new Array();
-    A1[1][0] = 145.79780519610026;
-    A1[1][1] = 3.4481599930442175;
-    A1[2] = new Array();
-    A1[2][0] = 149.91330828182;
-    A1[2][1] = -0.30487451954972083;
-    A1[3] = new Array();
-    A1[3][0] = 155.08062419270823;
-    A1[3][1] = 0.3625442372645076;
-    A1[4] = new Array();
-    A1[4][0] = 150.71164520368026;
-    A1[4][1] = 2.680912394930062;
-    B1[0]= new Array();
-    B1[0][0]= new Array();
-    B1[0][0][0]= 25;
-    B1[0][0][1]= 18;
-    B1[0][2] = new Array();
-    B1[0][3]= 1;
-    B1[0][2][0] = new Array();
-    B1[0][2][0][0] = 1;
-    B1[0][2][0][1] = 1;
-    B1[0][2][0][2] = 1;
-    B1[1]= new Array();
-    B1[1][0]= new Array();
-    B1[1][0][0]= 307;
-    B1[1][0][1]= 17;
-    B1[1][2] = new Array();
-    B1[1][3]= 1;
-    B1[1][2][0] = new Array();
-    B1[1][2][0][0] = 2;
-    B1[1][2][0][1] = 1;
-    B1[1][2][0][2] = 1;
-    B1[2]= new Array();
-    B1[2][0]= new Array();
-    B1[2][0][0]= 309;
-    B1[2][0][1]= 117;
-    B1[2][2] = new Array();
-    B1[2][3]= 1;
-    B1[2][2][0] = new Array();
-    B1[2][2][0][0] = 3;
-    B1[2][2][0][1] = 1;
-    B1[2][2][0][2] = 1;
-    B1[3]= new Array();
-    B1[3][0]= new Array();
-    B1[3][0][0]= 29;
-    B1[3][0][1]= 129;
-    B1[3][2] = new Array();
-    B1[3][3]= 1;
-    B1[3][2][0] = new Array();
-    B1[3][2][0][0] = 0;
-    B1[3][2][0][1] = 1;
-    B1[3][2][0][2] = 1;
-
-
-}
-function dost() {
-
-}
 
 
 var canvas = document.getElementById("canvas01");
 var ctx = canvas.getContext("2d");
 ctx.height = canvas.height;
 ctx.width = canvas.width;
-function reConfigure() {
-    //ctx.fillStyle = "white";
-    //ctx.clearRect(0,0, 600, 500);
-    for(var i = 0; i < B.length; i++) {
-        B[i][0][0] = prop * A[i+1][0] * Math.cos(A[i+1][1] + A[0][2]) + A[0][0];
-        B[i][0][1] = prop * A[i+1][0] * Math.sin(A[i+1][1] + A[0][2]) + A[0][1];
-        ctx.beginPath();
-        ctx.arc(B[i][0][0], B[i][0][1], prop/2, 0, 2 * Math.PI);
-        ctx.fillStyle = "black";
-        ctx.fill();
-    }
-
-    for(var k = 0; k < B.length; k++) {
-        for(var j = 0; j < B[k][3]; j++) {
-            ctx.lineWidth = prop * 4;
+function reConfigure(complete) {
+    for(var i = 1; i < complete.length; i++) {
+        if(complete[i][0] == 0) {
+            complete[i][1] = prop * complete[i][5][0] * Math.cos(complete[i][5][1] + complete[0][2]) + complete[0][0];
+            complete[i][2] = prop * complete[i][5][0] * Math.sin(complete[i][5][1] + complete[0][2]) + complete[0][1];
             ctx.beginPath();
-            ctx.moveTo(B[k][0][0], B[k][0][1]);
-            ctx.lineWidth =  B[k][2][j][1];
-            ctx.strokeStyle = palette[B[k][2][j][2]];
-            ctx.lineTo(B[ B[k][2][j][0] ][0][0],B[ B[k][2][j][0] ][0][1]);
-            ctx.stroke();
+            ctx.arc(complete[i][1], complete[i][2], prop*2, 0, 2 * Math.PI);
+            ctx.fillStyle = "black";
+            ctx.fill();
         }
 
     }
-}
-function reConfigure1() {
-    //ctx.fillStyle = "white";
-    //ctx.clearRect(0,0, 600, 500);
-    for(var i = 0; i < B1.length; i++) {
-        B1[i][0][0] = prop * A1[i+1][0] * Math.cos(A1[i+1][1] + A1[0][2]) + A1[0][0];
-        B1[i][0][1] = prop * A1[i+1][0] * Math.sin(A1[i+1][1] + A1[0][2]) + A1[0][1];
-        ctx.beginPath();
-        ctx.arc(B1[i][0][0], B1[i][0][1], prop/2, 0, 2 * Math.PI);
-        ctx.fillStyle = "black";
-        ctx.fill();
-    }
 
-    for(var k = 0; k < B1.length; k++) {
-        for(var j = 0; j < B1[k][3]; j++) {
-            ctx.lineWidth = prop * 4;
-            ctx.beginPath();
-            ctx.moveTo(B1[k][0][0], B1[k][0][1]);
-            ctx.lineWidth =  B1[k][2][j][1];
-            ctx.strokeStyle = palette[B1[k][2][j][2]];
-            ctx.lineTo(B1[ B1[k][2][j][0] ][0][0],B1[ B1[k][2][j][0] ][0][1]);
-            ctx.stroke();
-        }
+
+    for(var k = 1; k < complete.length; k++) {
+        if (complete[k][0] == 0)
+            for(var j = 0; j < complete[k][4]; j++) {
+                ctx.lineWidth = prop * 4;
+                ctx.beginPath();
+                ctx.moveTo(complete[k][1], complete[k][2]);
+                ctx.lineWidth =  complete[k][3][j][1];
+                ctx.strokeStyle = palette[complete[k][3][j][2]];
+                ctx.lineTo(complete[ complete[k][3][j][0] ][1],complete[ complete[k][3][j][0] ][2]);
+                ctx.stroke();
+            }
 
     }
 }
@@ -513,38 +313,30 @@ function draw() {
 
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(head, 100, 100);
-    var turretx;
-    var turrety;
 
     for(var i = 1; i < playerTanks.length; i++) {
         drawRotated(playerTanks[i][1], playerTanks[i][2], tank, playerTanks[i][3]  * (Math.PI / 180), playerTanks[i][10],
             playerTanks[i][11], playerTanks[i][14]);
+
+        placements[i][0][1] = playerTanks[i][2] + advance * Math.sin(playerTanks[i][3]* (Math.PI / 180));
+        placements[i][0][0] = playerTanks[i][1] + advance * Math.cos(playerTanks[i][3] * (Math.PI / 180));
+        placements[i][0][2] = (playerTanks[i][3] + playerTanks[i][4] ) * (Math.PI / 180);
+        reConfigure(placements[i]);
         ctx.beginPath();
-        turretx = playerTanks[i][1] + advance * Math.cos(playerTanks[i][3] * (Math.PI / 180));
-        turrety = playerTanks[i][2] + advance * Math.sin(playerTanks[i][3]* (Math.PI / 180));
-
-        drawRotated(turretx, turrety, head, (playerTanks[i][3] + playerTanks[i][4] ) * (Math.PI / 180),
-            playerTanks[i][12], playerTanks[i][13], playerTanks[i][14]);
-        ctx.arc(turretx, turrety, 5, 0, 2*Math.PI);
+        ctx.arc(placements[i][0][0], placements[i][0][1], 5, 0, 2*Math.PI);
         ctx.stroke();
+
     }
 
-    A[0][0] = playerTanks[0][1] + advance * Math.cos(playerTanks[0][3] * (Math.PI / 180));
-    A[0][1] = playerTanks[0][2] + advance * Math.sin(playerTanks[0][3]* (Math.PI / 180));
-    A[0][2] = (playerTanks[0][3] + playerTanks[0][4] ) * (Math.PI / 180);
-    for(var i = 0; i < C.length; i++) {
-        A[0][15] = new Array();
-        A[0][15][0] = C[i][0];
-        A[0][15][1] = C[i][1];
-    }
+    drawRotated(playerTanks[0][1], playerTanks[0][2], tank, playerTanks[0][3]  * (Math.PI / 180), playerTanks[0][10],
+        playerTanks[0][11], playerTanks[0][14]);
+    placements[0][0][1] = playerTanks[0][2] + advance * Math.sin(playerTanks[0][3]* (Math.PI / 180));
+    placements[0][0][0] = playerTanks[0][1] + advance * Math.cos(playerTanks[0][3] * (Math.PI / 180));
+    placements[0][0][2] = (playerTanks[0][3] + playerTanks[0][4] ) * (Math.PI / 180);
+    reConfigure(placements[0]);
 
 
-    A1[0][0] = playerTanks[0][1];
-    A1[0][1] = playerTanks[0][2];
-    A1[0][2] = playerTanks[0][3] * (Math.PI / 180);
 
-    reConfigure();
-    reConfigure1();
 
 }
 function move(s) {
@@ -572,7 +364,7 @@ function fire(s) {
         startingy = playerTanks[s][15][i][1];
 
         bullet[bc] = new Array();
-        bullet[bc][0] = ;
+       // bullet[bc][0] = ;
     }
 
 }
@@ -582,8 +374,16 @@ function handleBodyAngleMovement(s) {
     playerTanks[selected][2] = playerTanks[selected][2] + s * Math.sin(playerTanks[selected][3]* (Math.PI / 180));
 }
 function start() {
-    startupFirst();
-    startupBodyFirst();
+    placements[0] = new Array();
+    placements[1] = new Array();
+    placements[2] = new Array();
+    placements[3] = new Array();
+    placements[4] = new Array();
+    setEqualTo01(0);
+    setEqualTo01(1);
+    setEqualTo01(2);
+    setEqualTo01(3);
+    setEqualTo01(4);
     ctx.height = canvas.height;
     ctx.width = canvas.width;
     window.addEventListener("keydown", move, false);
