@@ -165,22 +165,40 @@ var bc = 0;
 
 var prop = 1;
 var palette = new Array();
-palette[1] = "#000000";
+palette[1] = "#E8E0DD";
+palette[2] = "#cbd4b3";
+ palette[3]= "#3E564C";
+ palette[4] = "#71A592";
+ palette[5] = "#B9DFC8";
+ palette[6] = "#E2F0F5";
 
 
 var canvas = document.getElementById("canvas01");
 var ctx = canvas.getContext("2d");
 ctx.height = canvas.height;
 ctx.width = canvas.width;
-function reConfigure(complete) {
+function reConfigure() {
+    ctx.fillStyle = "white";
+    ctx.clearRect(0,0, 600, 500);
     for(var i = 1; i < complete.length; i++) {
         if(complete[i][0] == 0) {
             complete[i][1] = prop * complete[i][5][0] * Math.cos(complete[i][5][1] + complete[0][2]) + complete[0][0];
             complete[i][2] = prop * complete[i][5][0] * Math.sin(complete[i][5][1] + complete[0][2]) + complete[0][1];
+            /*
             ctx.beginPath();
             ctx.arc(complete[i][1], complete[i][2], prop*2, 0, 2 * Math.PI);
             ctx.fillStyle = "black";
             ctx.fill();
+            */
+        }
+
+        if(complete[i][0] == 1) {
+            for (var k = 0; k < complete[i][1].length; k++)
+            {
+                complete[i][1][k][0][0] = prop * complete[i][1][k][1] * Math.cos(complete[i][1][k][2] + complete[0][2]) + complete[0][0];
+                complete[i][1][k][0][1] = prop * complete[i][1][k][1] * Math.sin(complete[i][1][k][2] + complete[0][2]) + complete[0][1];
+
+            }
         }
 
     }
@@ -197,10 +215,24 @@ function reConfigure(complete) {
                 ctx.lineTo(complete[ complete[k][3][j][0] ][1],complete[ complete[k][3][j][0] ][2]);
                 ctx.stroke();
             }
+        else if (complete[k][0] == 1) {
+            ctx.fillStyle = palette[complete[k][2][0]];
+            ctx.beginPath();
+            ctx.moveTo(complete[k][1][0][0][0], complete[k][1][0][0][1]);
+            //var problem;
+            //problem = "";
+            //problem += "x0: " + complete[k][1][0][0][0] + " y0: " + complete[k][1][0][0][1];
+            for (var i = 1; i < complete[k][1].length; i++) {
+                ctx.lineTo(complete[k][1][i][0][0], complete[k][1][i][0][1]);
+                //problem += "x0: " + complete[k][1][i][0][0] + " y0: " + complete[k][1][i][0][1];
+            }
+            ctx.closePath();
+            ctx.fill();
+            //window.alert(problem);
+        }
 
     }
 }
-
 
 var playerTanks = new Array(5);
 var botTanks = new Array(5);
