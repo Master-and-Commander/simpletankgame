@@ -1,21 +1,3 @@
-/*
- *Origin
- * A[0] = x, y, current angle
- * A[1] = proportion
- * A[2] = distances
- * */
-/*
- * normal
- * B[0] = x,y (temporary use)
- * B[1] = for origin's use
- * B[2] = list of connections
- * B[3] = counter;
- *  */
-/*
- * port
- * C[0] = x, y,
- * */
-
 var A = new Array();
 var keepDots = true;
 var gunCounter = 0;
@@ -33,7 +15,9 @@ var ctx = c.getContext("2d");
 var canvasWidth = 600;
 var canvasHeight = 500;
 var waitingpoints = new Array();
-var wpc = 0;
+var hullpoints = new Array();
+var forHull = false;
+var hpc = 0;
 var palette = new Array();
 palette[1] = "#E8E0DD";
 palette[2] = "#cbd4b3";
@@ -139,6 +123,12 @@ function handleX() {
     gunCounter++;
     counter++;
 }
+
+function handleV() {
+    
+}
+
+
 function handleC() {
 
 }
@@ -167,6 +157,7 @@ function handleO() {
     wpc++;
 }
 function handleL() {
+    if (!forHull) {
     ctx.fillStyle = palette[palleteNumber];
     /////////
 
@@ -196,6 +187,21 @@ function handleL() {
 
     //window.alert(waitingpoints);
     wpc = 0;
+
+    }
+
+    else {
+      complete[0][4] = new Array();
+      for (var i = 0; i < waitingpoints.length; i++)
+    {
+        complete[0][4][i] = new Array();
+        complete[0][1][i][0] = waitingpoints[i]; // x and y;
+        complete[0][1][i][1] = 0; // distance
+        complete[0][1][i][2] = 0; // angle
+
+    }
+    }
+
 }
 function finish() {
     // for every point
@@ -204,6 +210,18 @@ function finish() {
     var ex;
     var why;
     complete[0][3] = A;
+    for (var i = 0; i < complete[0][4].length; i++) {
+     dist = Math.sqrt(Math.pow((complete[0][0] - complete[0][4][i][0][0]),2) + Math.pow((complete[0][1] - complete[0][4][i][0][1]),2));
+     ex = complete[0][4][i][0][0] - complete[0][0];
+     why = complete[0][4][i][0][1] - complete[0][1];
+     angle = Math.atan(why/ex);
+     if (ex < 0)
+            {
+                angle += Math.PI;
+            }
+            complete[0][4][i][1] = dist;
+            complete[0][4][i][2] = angle; 
+    }
     for(var i = 1; i < complete.length; i++) {
         if (complete[i][0] == 0){
             dist = Math.sqrt(Math.pow((complete[0][0] - complete[i][1]),2) + Math.pow((complete[0][1] - complete[i][2]),2));
