@@ -17,7 +17,9 @@
  * */
 
 var A = new Array();
+var C = new Array();
 var keepDots = true;
+var shown = 1;
 var gunCounter = 0;
 var pointCounter = 0;
 var prop = 1;
@@ -103,6 +105,16 @@ function handleF() {
     complete[counter][2] = y;
     complete[counter][3] = new Array();
     complete[counter][4] = 0;
+    complete[counter][7] = shown;
+    if (shown == 0) {
+        C[pointCounter] = new Array();
+        C[pointCounter][0] = complete[begId][1];
+        C[pointCounter][1] = complete[begId][2];
+        C[pointCounter][2] = x;
+        C[pointCounter][3] = y;
+        pointCounter++;
+    }
+
     tarId = counter;
 
     ctx.beginPath();
@@ -140,7 +152,6 @@ function handleX() {
     counter++;
 }
 function handleC() {
-
 }
 
 function handleP() {

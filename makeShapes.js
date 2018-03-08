@@ -17,12 +17,13 @@
  * */
 
 var A = new Array();
-
+var C = new Array();
+var keepDots = true;
+var shown = 1;
 var gunCounter = 0;
-var shapes = new Array();
-var shapeCounter = 0;
+var pointCounter = 0;
 var prop = 1;
-var palleteNumber = 1;
+var palleteNumber = 3;
 var widthNumber = 1;
 var counter = 1;
 var begId;
@@ -36,7 +37,12 @@ var canvasHeight = 500;
 var waitingpoints = new Array();
 var wpc = 0;
 var palette = new Array();
-palette[1] = "#000000";
+palette[1] = "#E8E0DD";
+palette[2] = "#cbd4b3";
+palette[3]= "#3E564C";
+palette[4] = "#71A592";
+palette[5] = "#B9DFC8";
+palette[6] = "#E2F0F5";
 
 
 var complete = new Array();
@@ -46,10 +52,6 @@ function designateXandY(event) {
         x = event.pageX;
         y = event.pageY;
     }
-    // document.getElementById("clown").innerHTML = begId;
-}
-function initialize() {
-
 }
 function handleA() {
     for(var i  = 1; i < complete.length; i++) {
@@ -92,7 +94,7 @@ function handleD() {
 
     ctx.beginPath();
     ctx.arc( complete[counter][1], complete[counter][2], 5, 0, 2 * Math.PI);
-    ctx.fillStyle = "black";
+    ctx.fillStyle = palette[palleteNumber];
     ctx.fill();
     counter++;
 }
@@ -103,11 +105,19 @@ function handleF() {
     complete[counter][2] = y;
     complete[counter][3] = new Array();
     complete[counter][4] = 0;
+    complete[counter][7] = shown;
+    if (shown == 0) {
+        C[pointCounter] = new Array[];
+        C[pointCounter];
+        pointCounter++;
+    }
+
     tarId = counter;
 
     ctx.beginPath();
+    ctx.fillStyle = palette[palleteNumber];
     ctx.arc(x, y, 5, 0, 2 * Math.PI);
-    ctx.fillStyle = "black";
+
     ctx.fill();
 
     complete[begId][3][ complete[begId][4] ] = new Array();
@@ -118,6 +128,7 @@ function handleF() {
     counter++;
 
     ctx.beginPath();
+    ctx.strokeStyle = palette[palleteNumber];
     ctx.moveTo(complete[begId][1], complete[begId][2]);
     ctx.lineTo(complete[tarId][1], complete[tarId][2]);
     ctx.stroke();
@@ -138,7 +149,61 @@ function handleX() {
     counter++;
 }
 function handleC() {
+}
 
+function handleP() {
+    for(var i  = 1; i < complete.length; i++) {
+        if(complete[i][0] == 0 && Math.abs(complete[i][1] - x) < 10 && Math.abs(complete[i][2] - y) < 10)
+        {
+            x = complete[i][1];
+            y = complete[i][2];
+        }
+    }
+
+    waitingpoints[wpc] = new Array();
+    waitingpoints[wpc][0] = x;
+    waitingpoints[wpc][1] = y;
+    wpc++;
+}
+
+function handleO() {
+
+    waitingpoints[wpc] = new Array();
+    waitingpoints[wpc][0] = x;
+    waitingpoints[wpc][1] = y;
+
+    wpc++;
+}
+function handleL() {
+    ctx.fillStyle = palette[palleteNumber];
+    /////////
+
+    ctx.beginPath();
+    ctx.moveTo(waitingpoints[0][0], waitingpoints[0][1]);
+    for (var i = 0; i < waitingpoints.length - 1; i++) {
+        ctx.lineTo(waitingpoints[i + 1][0], waitingpoints[i + 1][1]);
+    }
+    ctx.closePath();
+    ctx.fill();
+
+    complete[counter] = new Array();
+    complete[counter][0] = 1;
+    complete[counter][1] = new Array();
+    complete[counter][2] = new Array();
+    complete[counter][2][0] = palleteNumber;
+    for (var i = 0; i < waitingpoints.length; i++)
+    {
+        complete[counter][1][i] = new Array();
+        complete[counter][1][i][0] = waitingpoints[i];
+        complete[counter][1][i][1] = 0;
+        complete[counter][1][i][2] = 0;
+
+    }
+    waitingpoints = new Array();
+    counter++;
+
+    //window.alert(waitingpoints);
+    wpc = 0;
 }
 function finish() {
     // for every point
@@ -163,6 +228,24 @@ function finish() {
             complete[i][5][1] = angle;
         }
 
+        else if (complete[i][0] == 1){
+
+            for (var k = 0; k < complete[i][1].length; k++)
+            {
+                ex = complete[i][1][k][0][0] - complete[0][0];
+                why = complete[i][1][k][0][1] - complete[0][1];
+                dist = Math.sqrt(Math.pow(ex,2) + Math.pow(why,2));
+                angle = Math.atan(why/ex);
+                if (ex < 0)
+                {
+                    angle += Math.PI;
+                }
+
+                complete[i][1][k][1] = dist;
+                complete[i][1][k][2] = angle;
+            }
+        }
+
 
 
     }
@@ -171,27 +254,34 @@ function finish() {
 }
 
 function move(s) {
-    switch (s.keyCode) {
-        case (65): handleA(); break;
-        case (66): handleB(); break;
-        case (83): handleS(); break;
-        case (68): handleD(); break;
-        case (69):
-            complete[0][2] += Math.PI/12;
-            complete[0][2] %= 2 * Math.PI;
+    if(s.keyCode > 47 && s.keyCode < 53)
+        palleteNumber = s.keyCode - 48;
+    else
+        switch (s.keyCode) {
+            case (65): handleA(); break;
+            case (66): handleB(); break;
+            case (83): handleS(); break;
+            case (68): handleD(); break;
+            case (69):
+                complete[0][2] += Math.PI/12;
+                complete[0][2] %= 2 * Math.PI;
 
-            reConfigure(); break;
-        case (70): handleF(); break;
-        case (90): handleZ(); break;
-        case (88): handleX(); break;
-        case (67): handleC(); break;
-        case (77): finish(); break;
-    }
+                reConfigure(); break;
+            case (70): handleF(); break;
+            case (90): handleZ(); break;
+            case (88): handleX(); break;
+            case (67): handleC(); break;
+            case (77): finish(); break;
+            case (79): handleO(); break;
+            case (80): handleP(); break;
+            case (76): handleL(); break;
+        }
 }
 
 function handleB() {
     prop /= 2;
 }
+
 
 function reConfigure() {
     ctx.fillStyle = "white";
@@ -200,10 +290,21 @@ function reConfigure() {
         if(complete[i][0] == 0) {
             complete[i][1] = prop * complete[i][5][0] * Math.cos(complete[i][5][1] + complete[0][2]) + complete[0][0];
             complete[i][2] = prop * complete[i][5][0] * Math.sin(complete[i][5][1] + complete[0][2]) + complete[0][1];
+            /*
             ctx.beginPath();
             ctx.arc(complete[i][1], complete[i][2], prop*2, 0, 2 * Math.PI);
             ctx.fillStyle = "black";
             ctx.fill();
+            */
+        }
+
+        if(complete[i][0] == 1) {
+            for (var k = 0; k < complete[i][1].length; k++)
+            {
+                complete[i][1][k][0][0] = prop * complete[i][1][k][1] * Math.cos(complete[i][1][k][2] + complete[0][2]) + complete[0][0];
+                complete[i][1][k][0][1] = prop * complete[i][1][k][1] * Math.sin(complete[i][1][k][2] + complete[0][2]) + complete[0][1];
+
+            }
         }
 
     }
@@ -220,15 +321,30 @@ function reConfigure() {
                 ctx.lineTo(complete[ complete[k][3][j][0] ][1],complete[ complete[k][3][j][0] ][2]);
                 ctx.stroke();
             }
+        else if (complete[k][0] == 1) {
+            ctx.fillStyle = palette[complete[k][2][0]];
+            ctx.beginPath();
+            ctx.moveTo(complete[k][1][0][0][0], complete[k][1][0][0][1]);
+            //var problem;
+            //problem = "";
+            //problem += "x0: " + complete[k][1][0][0][0] + " y0: " + complete[k][1][0][0][1];
+            for (var i = 1; i < complete[k][1].length; i++) {
+                ctx.lineTo(complete[k][1][i][0][0], complete[k][1][i][0][1]);
+                //problem += "x0: " + complete[k][1][i][0][0] + " y0: " + complete[k][1][i][0][1];
+            }
+            ctx.closePath();
+            ctx.fill();
+            //window.alert(problem);
+        }
 
     }
 }
-
 function init() {
     window.addEventListener("keydown", move, false);
     window.addEventListener("click",designateXandY,false);
 }
 var prompt;
+
 
 var name = "placements"
 var numb = "01";
@@ -270,6 +386,18 @@ function writeBetter() {
             prompt += name + "[s]["+i+"][0] = "+ complete[i][0] +";\n";
             prompt += name + "[s]["+i+"][1] = "+ complete[i][1] +";\n";
             prompt += name + "[s]["+i+"][2] = "+ complete[i][2] +";\n";
+        }
+
+        else if(complete[i][0] == 1)
+        {
+
+            prompt += "complete[" + i + "] = new Array();\n";
+            prompt += "complete[" + i + "][0] = 1;\n";
+            prompt += "complete[" + i + "][1] = new Array();\n";
+            for (var k = 0; k < waitingpoints.length; k++)
+            {
+                prompt += "complete[" + i + "][1]["+k+"] = " + complete[i][1][k] + ";\n";
+            }
         }
     }
     prompt += "}\n";
