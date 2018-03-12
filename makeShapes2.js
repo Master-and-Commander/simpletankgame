@@ -1,5 +1,12 @@
 var A = new Array();
 var C = new Array();
+var complete = new Array();
+complete[0] = new Array();
+
+complete[0][3] = new Array();
+complete[0][4] = new Array();
+complete[0][5] = new Array();
+
 var gridPoints = new Array();
 var gpc = 0;
 var keepDots = true;
@@ -26,15 +33,29 @@ var forHull = false;
 var forHull2 = false;
 var hpc = 0;
 var palette = new Array();
-palette[1] = "#E8E0DD";
-palette[2] = "#cbd4b3";
-palette[3]= "#3E564C";
-palette[4] = "#71A592";
-palette[5] = "#B9DFC8";
-palette[6] = "#E2F0F5";
+palette[1] = "#E8E0DD"; // 1-
+palette[2] = "#cbd4b3"; // 1
+palette[3]= "#3E564C";  // 1
+palette[4] = "#71A592"; // 2
+palette[5] = "#B9DFC8"; // 2-
+palette[6] = "#E2F0F5"; // 2
+palette[7] = "#E2F0F5"; // 3
+palette[8] = "#E2F0F5";
+
+palette[1] = "#d75d00"; // 1-
+palette[2] = "#d7a500"; // 1
+palette[3] = "#ffa113";  // 1 +
+palette[4] = "#9e1701"; // 2
+palette[5] = "#9e0112"; // 2-
+palette[6] = "#0b0d19"; // 4
 
 
-var complete = new Array();
+
+
+var tran = false;
+
+
+
 ///////// no change
 function designateXandY(event) {
     if(event.pageX < canvasWidth && event.pageY < canvasHeight)
@@ -73,6 +94,13 @@ function handleS() {
 
 }
 function handleD() {
+    for(var i = 0; i < gpc; i++ ) {
+        if(Math.abs(gridPoints[i][0] - x) < 7 && Math.abs(gridPoints[i][1] - y) < 7) {
+            x = gridPoints[i][0];
+            y = gridPoints[i][1];
+            break;
+        }
+    }
     // create new point
     complete[counter] = new Array();
     complete[counter][0] = 0;
@@ -127,13 +155,10 @@ function handleF() {
     ctx.stroke();
 }
 function handleZ() {
-    complete[0] = new Array();
+
     complete[0][0] = x;
     complete[0][1] = y;
     complete[0][2] = 0;
-    complete[0][3] = new Array();
-    complete[0][4] = new Array();
-    complete[0][5] = new Array();
 }
 function handleP() {
     for(var i  = 1; i < complete.length; i++) {
@@ -152,7 +177,7 @@ function handleP() {
 function handleO() {
 
     for(var i = 0; i < gpc; i++ ) {
-        if(Math.abs(gridPoints[i][0] - x) < 10 && Math.abs(gridPoints[i][1] - y) < 10) {
+        if(Math.abs(gridPoints[i][0] - x) < 7 && Math.abs(gridPoints[i][1] - y) < 7) {
             x = gridPoints[i][0];
             y = gridPoints[i][1];
             break;
@@ -171,15 +196,22 @@ function handleO() {
 function handleL() {
     // primary Hull
     if (forHull) {
-        complete[0][4] = new Array();
+        window.alert(waitingpoints.length);
+        complete[0][4] = new Array(); // this gives me an error and I don't know why
+        window.alert("Success");
         for (var i = 0; i < waitingpoints.length; i++) {
+
             complete[0][4][i] = new Array();
+
             complete[0][4][i][0] = waitingpoints[i]; // x and y;
             complete[0][4][i][1] = 0; // distance
             complete[0][4][i][2] = 0; // angle
+
+
         }
         waitingpoints = new Array();
         wpc = 0;
+
     }
     // secondary Hull
     else if (forHull2) {
@@ -202,6 +234,10 @@ function handleL() {
             ctx.lineTo(waitingpoints[i + 1][0], waitingpoints[i + 1][1]);
         }
         ctx.closePath();
+        if (tran) {
+            ctx.globalAlpha = .75;
+        }
+
         ctx.fill();
 
         complete[counter] = new Array();
@@ -209,6 +245,10 @@ function handleL() {
         complete[counter][1] = new Array();
         complete[counter][2] = new Array();
         complete[counter][2][0] = palleteNumber;
+        complete[counter][2][1] = 0; /////////////////////////////
+        if (tran) {
+            complete[counter][2][1]= 1;
+        }
         for (var i = 0; i < waitingpoints.length; i++) {
             complete[counter][1][i] = new Array();
             complete[counter][1][i][0] = waitingpoints[i];
@@ -220,11 +260,10 @@ function handleL() {
         counter++;
         wpc = 0;
 
-
+        ctx.globalAlpha = 1;
 
     }
 }
-////// no change end
 function borderLines() {
     gpc = 0;
     for(var i = 0; i < canvasWidth; i += 20) {
@@ -252,6 +291,13 @@ function borderLines() {
         ctx.stroke();
     }
 }
+function handleI() {
+    if (tran)
+        tran = false;
+    else
+        tran = true;
+}
+////// no change end
 
 
 // bullets
@@ -267,8 +313,22 @@ function handleX() {
     gunCounter++;
     counter++;
 }
+// no for hull
 function handleC() {
+    forHull = false;
+    forHull2 = false;
 }
+// primary hull
+function handleG() {
+    forHull = true;
+    forHull2 = false;
+}
+// secondary hull
+function handleH() {
+    forHull = false;
+    forHull2 = true;
+}
+
 function finish() {
     // for every point
     var dist;
@@ -340,12 +400,13 @@ function finish() {
 
 
     }
+    window.alert(complete[0][4].length);
     // now write array to a file somehow
     writeBetter();
 }
 
 function move(s) {
-    if(s.keyCode > 47 && s.keyCode < 53)
+    if(s.keyCode > 47 && s.keyCode < 60)
         palleteNumber = s.keyCode - 48;
     else
     switch (s.keyCode) {
@@ -353,21 +414,24 @@ function move(s) {
         case (66): handleB(); break;
         case (67): handleC(); break;
         case (68): handleD(); break;
-        //case (69)
-        case (83): handleS(); break;
-
         case (69):
             complete[0][2] += Math.PI/12;
             complete[0][2] %= 2 * Math.PI;
-            reConfigure(); break;
+            reConfigure(); break;// hull1
         case (70): handleF(); break;
-        case (90): handleZ(); break;
-        case (88): handleX(); break;
-
+        case (71): handleG(); break; // hull1
+        case (72): handleH(); break; // hull2
+        case (73): handleI(); break;
+        case (76): handleL(); break;
         case (77): finish(); break;
         case (79): handleO(); break;
         case (80): handleP(); break;
-        case (76): handleL(); break;
+        case (83): handleS(); break;
+        case (88): handleX(); break;
+        case (90): handleZ(); break;
+
+
+
     }
 }
 
@@ -417,6 +481,10 @@ function reConfigure() {
         }
         else if (complete[k][0] == 1) {
             ctx.fillStyle = palette[complete[k][2][0]];
+            if(complete[k][2][1] == 1) {
+                ctx.globalAlpha = .75;
+            }
+
             ctx.beginPath();
             ctx.moveTo(complete[k][1][0][0][0], complete[k][1][0][0][1]);
             //var problem;
@@ -428,6 +496,7 @@ function reConfigure() {
             }
             ctx.closePath();
             ctx.fill();
+            ctx.globalAlpha = 1;
             //window.alert(problem);
         }
 
@@ -452,8 +521,28 @@ function writeBetter() {
     prompt += name + "[s][0][1]= "+ complete[0][1] +";\n";
     prompt += name + "[s][0][2]= "+ complete[0][2] +";\n";
     prompt += name + "[s][0][3] = new Array();\n";
+    prompt += name + "[s][0][4] = new Array();\n"; // hull 1
+
+    prompt += name + "[s][0][5] = new Array();\n"; // hull 2
     for(var j = 0; j < gunCounter; j++) {
         prompt += name + "[s][0][3]["+j+"]= "+ complete[0][3][j] +";\n";
+    }
+    for(var j = 0; j < complete[0][4].length; j++) {
+        prompt += name + "[s][0][4]["+j+"]= new Array();\n";
+        prompt += name + "[s][0][4]["+j+"][0]= new Array();\n";
+        prompt += name + "[s][0][4]["+j+"][0][0]= "+ complete[0][4][j][0][0] +";\n";
+        prompt += name + "[s][0][4]["+j+"][0][1]= "+ complete[0][4][j][0][1] +";\n";
+        prompt += name + "[s][0][4]["+j+"][1]= "+ complete[0][4][j][1] +";\n";
+        prompt += name + "[s][0][4]["+j+"][2]= "+ complete[0][4][j][2] +";\n";
+
+    }
+    for(var j = 0; j < complete[0][5].length; j++) {
+        prompt += name + "[s][0][5]["+j+"]= new Array();\n";
+        prompt += name + "[s][0][5]["+j+"][0]= new Array();\n";
+        prompt += name + "[s][0][5]["+j+"][0][0]= "+ complete[0][5][j][0][0] +";\n";
+        prompt += name + "[s][0][5]["+j+"][0][1]= "+ complete[0][5][j][0][1] +";\n";
+        prompt += name + "[s][0][5]["+j+"][1]= "+ complete[0][5][j][1] +";\n";
+        prompt += name + "[s][0][5]["+j+"][2]= "+ complete[0][5][j][2] +";\n";
     }
 
     for(var i = 1; i < complete.length; i++) {
@@ -481,18 +570,28 @@ function writeBetter() {
             prompt += name + "[s]["+i+"][0] = "+ complete[i][0] +";\n";
             prompt += name + "[s]["+i+"][1] = "+ complete[i][1] +";\n";
             prompt += name + "[s]["+i+"][2] = "+ complete[i][2] +";\n";
+            prompt += name + "[s]["+i+"][3] = "+ complete[i][3] +";\n";
+            prompt += name + "[s]["+i+"][4] = "+ complete[i][4] +";\n";
         }
 
         else if(complete[i][0] == 1)
         {
 
-            prompt += "complete[" + i + "] = new Array();\n";
-            prompt += "complete[" + i + "][0] = 1;\n";
-            prompt += "complete[" + i + "][1] = new Array();\n";
-            for (var k = 0; k < waitingpoints.length; k++)
+            prompt += name + "[s][" + i + "] = new Array();\n";
+            prompt += name +"[s][" + i + "][0] = 1;\n";
+            prompt += name +"[s][" + i + "][1] = new Array();\n";
+            for (var k = 0; k < complete[i][1].length; k++)
             {
-                prompt += "complete[" + i + "][1]["+k+"] = " + complete[i][1][k] + ";\n";
+                prompt += name +"[s][" + i + "][1]["+k+"] = new Array();\n";
+                prompt += name +"[s][" + i + "][1]["+k+"][0] = new Array();\n";
+                prompt += name +"[s][" + i + "][1]["+k+"][0][0] = " + complete[i][1][k][0][0] + ";\n";
+                prompt += name +"[s][" + i + "][1]["+k+"][0][1] = " + complete[i][1][k][0][1] + ";\n";
+                prompt += name +"[s][" + i + "][1]["+k+"][1] = " + complete[i][1][k][1] + ";\n";
+                prompt += name +"[s][" + i + "][1]["+k+"][2] = " + complete[i][1][k][2] + ";\n";
             }
+            prompt += name +"[s]["+i+"][2] = new Array();\n";
+            prompt += name + "[s]["+i+"][2][0] = "+ complete[i][2][0] +";\n";
+            prompt += name + "[s]["+i+"][2][1] = "+ complete[i][2][1] +";\n";
         }
     }
     prompt += "}\n";

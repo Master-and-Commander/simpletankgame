@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91df093b-6bb7-4ed4-9056-315cb8ceb4ce" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/makeShapes.js" afterPath="$PROJECT_DIR$/makeShapes.js" />
       <change beforePath="$PROJECT_DIR$/makeShapes2.js" afterPath="$PROJECT_DIR$/makeShapes2.js" />
+      <change beforePath="$PROJECT_DIR$/playground.js" afterPath="$PROJECT_DIR$/playground.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,42 +16,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playground.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/playground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="406" column="1" lean-forward="false" selection-start-line="406" selection-start-column="1" selection-end-line="406" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="933" column="28" lean-forward="true" selection-start-line="933" selection-start-column="28" selection-end-line="933" selection-end-column="28" />
+              <folding>
+                <element signature="e#24#246#0" expanded="false" />
+                <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+                <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+                <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+                <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+                <element signature="n#!!block;n#intersects#0" expanded="false" />
+                <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+                <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+                <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+                <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+                <element signature="n#!!block;n#draw#0" expanded="false" />
+                <element signature="n#!!block;n#validate#0" expanded="false" />
+                <element signature="n#!!block;n#secondTry#0" expanded="false" />
+                <element signature="n#!!block;n#start#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="properties.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/properties.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="428" column="7" lean-forward="false" selection-start-line="428" selection-start-column="4" selection-end-line="428" selection-end-column="7" />
+              <folding>
+                <element signature="e#272#757#0" expanded="false" />
+                <element signature="e#790#881#0" expanded="false" />
+                <element signature="n#!!block;n#startupFirst#0" expanded="false" />
+                <element signature="n#!!block;n#startupBodyFirst#0" expanded="false" />
+                <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+                <element signature="n#!!block;n#reConfigure1#0" expanded="false" />
+                <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+                <element signature="e#8505#8646#0" expanded="false" />
+                <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+                <element signature="e#9746#10223#0" expanded="false" />
+                <element signature="n#!!block;n#makeHeadImage#0" expanded="false" />
+                <element signature="n#!!block;n#drawRotated#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch.js" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makeShapes2.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="makeShapes2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makeShapes2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="156" column="33" lean-forward="false" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
+            <state relative-caret-position="272">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+                <element signature="n#!!block;n#handleA#0" expanded="false" />
                 <element signature="n#!!block;n#handleS#0" expanded="false" />
                 <element signature="n#!!block;n#handleD#0" expanded="false" />
                 <element signature="n#!!block;n#handleF#0" expanded="false" />
-                <element signature="n#!!block;n#handleZ#0" expanded="false" />
                 <element signature="n#!!block;n#handleP#0" expanded="false" />
-                <element signature="n#!!block;n#handleL#0" expanded="false" />
-                <element signature="e#4639#4857#0" expanded="false" />
-                <element signature="e#5058#5276#0" expanded="false" />
-                <element signature="e#5564#5649#0" expanded="false" />
-                <element signature="e#5963#6173#0" expanded="false" />
+                <element signature="n#!!block;n#handleO#0" expanded="false" />
+                <element signature="e#5687#5905#0" expanded="false" />
+                <element signature="e#6193#6278#0" expanded="false" />
+                <element signature="e#6795#7005#0" expanded="false" />
+                <element signature="n#!!block;n#borderLines#0" expanded="false" />
+                <element signature="n#!!block;n#handleI#0" expanded="false" />
                 <element signature="n#!!block;n#handleX#0" expanded="false" />
-                <element signature="n#!!block;n#finish#0" expanded="false" />
-                <element signature="e#7487#7930#0" expanded="false" />
-                <element signature="e#7984#8421#0" expanded="false" />
-                <element signature="e#8503#8985#0" expanded="false" />
-                <element signature="n#!!block;n#move#0" expanded="false" />
+                <element signature="n#!!block;n#handleC#0" expanded="false" />
+                <element signature="n#!!block;n#handleG#0" expanded="false" />
+                <element signature="n#!!block;n#handleH#0" expanded="false" />
+                <element signature="e#9156#9593#0" expanded="false" />
+                <element signature="e#9675#10157#0" expanded="false" />
                 <element signature="n#!!block;n#handleB#0" expanded="false" />
                 <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-                <element signature="n#!!block;n#writeBetter#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,8 +108,18 @@
       <file leaf-file-name="makeShapes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makeShapes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -68,36 +128,30 @@
       <file leaf-file-name="makeShapes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makeShapes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="405" column="45" lean-forward="false" selection-start-line="405" selection-start-column="45" selection-end-line="405" selection-end-column="45" />
+            <state relative-caret-position="357">
+              <caret line="336" column="37" lean-forward="true" selection-start-line="336" selection-start-column="37" selection-end-line="336" selection-end-column="37" />
               <folding>
-                <element signature="e#89#214#0" expanded="false" />
-                <element signature="e#215#247#0" expanded="false" />
                 <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-                <element signature="n#!!block;n#handleA#0" expanded="false" />
                 <element signature="n#!!block;n#handleS#0" expanded="false" />
                 <element signature="n#!!block;n#handleD#0" expanded="false" />
+                <element signature="n#!!block;n#handleF#0" expanded="false" />
                 <element signature="n#!!block;n#handleZ#0" expanded="false" />
-                <element signature="n#!!block;n#handleP#0" expanded="false" />
-                <element signature="n#!!block;n#handleO#0" expanded="false" />
                 <element signature="n#!!block;n#handleL#0" expanded="false" />
-                <element signature="n#!!block;n#finish#0" expanded="false" />
-                <element signature="e#5299#5781#0" expanded="false" />
-                <element signature="n#!!block;n#move#0" expanded="false" />
+                <element signature="e#5151#5369#0" expanded="false" />
+                <element signature="e#5570#5788#0" expanded="false" />
+                <element signature="e#6076#6161#0" expanded="false" />
+                <element signature="e#6678#6888#0" expanded="false" />
+                <element signature="n#!!block;n#borderLines#0" expanded="false" />
+                <element signature="n#!!block;n#handleX#0" expanded="false" />
+                <element signature="n#!!block;n#handleC#0" expanded="false" />
+                <element signature="n#!!block;n#handleG#0" expanded="false" />
+                <element signature="n#!!block;n#handleH#0" expanded="false" />
+                <element signature="e#9032#9469#0" expanded="false" />
+                <element signature="e#9551#10033#0" expanded="false" />
                 <element signature="n#!!block;n#handleB#0" expanded="false" />
                 <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-                <element signature="n#!!block;n#init#0" expanded="false" />
+                <element signature="n#!!block;n#writeBetter#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hullstyle.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hullstyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -115,11 +169,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>prop</find>
-      <find>proportion</find>
-      <find>getContext</find>
-      <find>5</find>
-      <find>line</find>
       <find>3</find>
       <find>linewidth</find>
       <find>linew</find>
@@ -133,7 +182,6 @@
       <find>img</find>
       <find>type</find>
       <find>advance</find>
-      <find>clown</find>
       <find>handleC</find>
       <find>{insert here}</find>
       <find>%</find>
@@ -143,13 +191,24 @@
       <find>move</find>
       <find>dist</find>
       <find>confi</find>
-      <find>placements</find>
       <find>length</find>
+      <find>complete</find>
+      <find>placements</find>
+      <find>placementsbody[s]</find>
+      <find>10</find>
+      <find>doc</find>
+      <find>clown</find>
+      <find>i</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>name + &quot;[s]</replace>
       <replace>1</replace>
+      <replace>placements[t]</replace>
+      <replace>placements[s]</replace>
+      <replace>placementsbody[s]</replace>
+      <replace>placementsbody</replace>
+      <replace>100</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -163,10 +222,11 @@
         <option value="$PROJECT_DIR$/hullstyle.css" />
         <option value="$PROJECT_DIR$/properties.js" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/playground.js" />
-        <option value="$PROJECT_DIR$/makeShapes.js" />
         <option value="$PROJECT_DIR$/makeShapes.html" />
+        <option value="$PROJECT_DIR$/makeShapes.js" />
         <option value="$PROJECT_DIR$/makeShapes2.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
+        <option value="$PROJECT_DIR$/playground.js" />
       </list>
     </option>
   </component>
@@ -228,6 +288,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -263,7 +324,7 @@
       <workItem from="1519265244526" duration="6082000" />
       <workItem from="1519331810928" duration="1120000" />
       <workItem from="1519513837932" duration="618000" />
-      <workItem from="1520551451904" duration="8343000" />
+      <workItem from="1520551451904" duration="43339000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized tank arrays with their appropriate properties">
       <created>1517894979362</created>
@@ -314,17 +375,24 @@
       <option name="project" value="LOCAL" />
       <updated>1519270026027</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="grid and better point selection for shapes">
+      <created>1520615214692</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1520615214692</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195402000" />
+    <option name="totallyTimeSpent" value="230398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.041603632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15506808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -406,11 +474,12 @@
     <MESSAGE value="arrays are much cleaner" />
     <MESSAGE value="shapes incorporated" />
     <MESSAGE value="colors incorporated into shape design" />
-    <option name="LAST_COMMIT_MESSAGE" value="colors incorporated into shape design" />
+    <MESSAGE value="grid and better point selection for shapes" />
+    <option name="LAST_COMMIT_MESSAGE" value="grid and better point selection for shapes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -419,7 +488,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6902">
           <caret line="406" column="1" lean-forward="false" selection-start-line="406" selection-start-column="1" selection-end-line="406" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -428,22 +512,26 @@
         <state relative-caret-position="2703">
           <caret line="405" column="45" lean-forward="false" selection-start-line="405" selection-start-column="45" selection-end-line="405" selection-end-column="45" />
           <folding>
-            <element signature="e#89#214#0" expanded="false" />
-            <element signature="e#215#247#0" expanded="false" />
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
+            <element signature="n#!!block;n#handleF#0" expanded="false" />
             <element signature="n#!!block;n#handleZ#0" expanded="false" />
-            <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleO#0" expanded="false" />
             <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#5299#5781#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="e#5151#5369#0" expanded="false" />
+            <element signature="e#5570#5788#0" expanded="false" />
+            <element signature="e#6076#6161#0" expanded="false" />
+            <element signature="e#6678#6888#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9032#9469#0" expanded="false" />
+            <element signature="e#9551#10033#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -470,25 +558,25 @@
           <caret line="178" column="1" lean-forward="true" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
             <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="e#4639#4857#0" expanded="false" />
-            <element signature="e#5058#5276#0" expanded="false" />
-            <element signature="e#5564#5649#0" expanded="false" />
-            <element signature="e#5963#6173#0" expanded="false" />
+            <element signature="n#!!block;n#handleO#0" expanded="false" />
+            <element signature="e#5687#5905#0" expanded="false" />
+            <element signature="e#6193#6278#0" expanded="false" />
+            <element signature="e#6795#7005#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleI#0" expanded="false" />
             <element signature="n#!!block;n#handleX#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#7487#7930#0" expanded="false" />
-            <element signature="e#7984#8421#0" expanded="false" />
-            <element signature="e#8503#8985#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9156#9593#0" expanded="false" />
+            <element signature="e#9675#10157#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -497,7 +585,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6902">
           <caret line="406" column="1" lean-forward="false" selection-start-line="406" selection-start-column="1" selection-end-line="406" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -514,22 +617,26 @@
         <state relative-caret-position="2703">
           <caret line="405" column="45" lean-forward="false" selection-start-line="405" selection-start-column="45" selection-end-line="405" selection-end-column="45" />
           <folding>
-            <element signature="e#89#214#0" expanded="false" />
-            <element signature="e#215#247#0" expanded="false" />
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
+            <element signature="n#!!block;n#handleF#0" expanded="false" />
             <element signature="n#!!block;n#handleZ#0" expanded="false" />
-            <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleO#0" expanded="false" />
             <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#5299#5781#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="e#5151#5369#0" expanded="false" />
+            <element signature="e#5570#5788#0" expanded="false" />
+            <element signature="e#6076#6161#0" expanded="false" />
+            <element signature="e#6678#6888#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9032#9469#0" expanded="false" />
+            <element signature="e#9551#10033#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -548,25 +655,25 @@
           <caret line="178" column="1" lean-forward="true" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
             <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="e#4639#4857#0" expanded="false" />
-            <element signature="e#5058#5276#0" expanded="false" />
-            <element signature="e#5564#5649#0" expanded="false" />
-            <element signature="e#5963#6173#0" expanded="false" />
+            <element signature="n#!!block;n#handleO#0" expanded="false" />
+            <element signature="e#5687#5905#0" expanded="false" />
+            <element signature="e#6193#6278#0" expanded="false" />
+            <element signature="e#6795#7005#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleI#0" expanded="false" />
             <element signature="n#!!block;n#handleX#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#7487#7930#0" expanded="false" />
-            <element signature="e#7984#8421#0" expanded="false" />
-            <element signature="e#8503#8985#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9156#9593#0" expanded="false" />
+            <element signature="e#9675#10157#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,7 +682,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2210">
           <caret line="406" column="1" lean-forward="false" selection-start-line="406" selection-start-column="1" selection-end-line="406" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -592,22 +714,26 @@
         <state relative-caret-position="2703">
           <caret line="405" column="45" lean-forward="false" selection-start-line="405" selection-start-column="45" selection-end-line="405" selection-end-column="45" />
           <folding>
-            <element signature="e#89#214#0" expanded="false" />
-            <element signature="e#215#247#0" expanded="false" />
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
+            <element signature="n#!!block;n#handleF#0" expanded="false" />
             <element signature="n#!!block;n#handleZ#0" expanded="false" />
-            <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleO#0" expanded="false" />
             <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#5299#5781#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="e#5151#5369#0" expanded="false" />
+            <element signature="e#5570#5788#0" expanded="false" />
+            <element signature="e#6076#6161#0" expanded="false" />
+            <element signature="e#6678#6888#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9032#9469#0" expanded="false" />
+            <element signature="e#9551#10033#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -626,25 +752,25 @@
           <caret line="126" column="56" lean-forward="true" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
           <folding>
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
             <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="e#4639#4857#0" expanded="false" />
-            <element signature="e#5058#5276#0" expanded="false" />
-            <element signature="e#5564#5649#0" expanded="false" />
-            <element signature="e#5963#6173#0" expanded="false" />
+            <element signature="n#!!block;n#handleO#0" expanded="false" />
+            <element signature="e#5687#5905#0" expanded="false" />
+            <element signature="e#6193#6278#0" expanded="false" />
+            <element signature="e#6795#7005#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleI#0" expanded="false" />
             <element signature="n#!!block;n#handleX#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#7487#7930#0" expanded="false" />
-            <element signature="e#7984#8421#0" expanded="false" />
-            <element signature="e#8503#8985#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9156#9593#0" expanded="false" />
+            <element signature="e#9675#10157#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -653,7 +779,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,25 +811,25 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
             <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="e#4639#4857#0" expanded="false" />
-            <element signature="e#5058#5276#0" expanded="false" />
-            <element signature="e#5564#5649#0" expanded="false" />
-            <element signature="e#5963#6173#0" expanded="false" />
+            <element signature="n#!!block;n#handleO#0" expanded="false" />
+            <element signature="e#5687#5905#0" expanded="false" />
+            <element signature="e#6193#6278#0" expanded="false" />
+            <element signature="e#6795#7005#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleI#0" expanded="false" />
             <element signature="n#!!block;n#handleX#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#7487#7930#0" expanded="false" />
-            <element signature="e#7984#8421#0" expanded="false" />
-            <element signature="e#8503#8985#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9156#9593#0" expanded="false" />
+            <element signature="e#9675#10157#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,22 +847,26 @@
         <state relative-caret-position="1938">
           <caret line="277" column="45" lean-forward="false" selection-start-line="277" selection-start-column="45" selection-end-line="277" selection-end-column="45" />
           <folding>
-            <element signature="e#89#214#0" expanded="false" />
-            <element signature="e#215#247#0" expanded="false" />
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
+            <element signature="n#!!block;n#handleF#0" expanded="false" />
             <element signature="n#!!block;n#handleZ#0" expanded="false" />
-            <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleO#0" expanded="false" />
             <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#5299#5781#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="e#5151#5369#0" expanded="false" />
+            <element signature="e#5570#5788#0" expanded="false" />
+            <element signature="e#6076#6161#0" expanded="false" />
+            <element signature="e#6678#6888#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9032#9469#0" expanded="false" />
+            <element signature="e#9551#10033#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -738,7 +883,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -755,25 +915,25 @@
           <caret line="230" column="0" lean-forward="true" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
             <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="e#4639#4857#0" expanded="false" />
-            <element signature="e#5058#5276#0" expanded="false" />
-            <element signature="e#5564#5649#0" expanded="false" />
-            <element signature="e#5963#6173#0" expanded="false" />
+            <element signature="n#!!block;n#handleO#0" expanded="false" />
+            <element signature="e#5687#5905#0" expanded="false" />
+            <element signature="e#6193#6278#0" expanded="false" />
+            <element signature="e#6795#7005#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleI#0" expanded="false" />
             <element signature="n#!!block;n#handleX#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#7487#7930#0" expanded="false" />
-            <element signature="e#7984#8421#0" expanded="false" />
-            <element signature="e#8503#8985#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9156#9593#0" expanded="false" />
+            <element signature="e#9675#10157#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -791,22 +951,26 @@
         <state relative-caret-position="1938">
           <caret line="277" column="45" lean-forward="false" selection-start-line="277" selection-start-column="45" selection-end-line="277" selection-end-column="45" />
           <folding>
-            <element signature="e#89#214#0" expanded="false" />
-            <element signature="e#215#247#0" expanded="false" />
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
+            <element signature="n#!!block;n#handleF#0" expanded="false" />
             <element signature="n#!!block;n#handleZ#0" expanded="false" />
-            <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleO#0" expanded="false" />
             <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#5299#5781#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="e#5151#5369#0" expanded="false" />
+            <element signature="e#5570#5788#0" expanded="false" />
+            <element signature="e#6076#6161#0" expanded="false" />
+            <element signature="e#6678#6888#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9032#9469#0" expanded="false" />
+            <element signature="e#9551#10033#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -846,7 +1010,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -871,25 +1050,25 @@
           <caret line="118" column="19" lean-forward="false" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
           <folding>
             <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleA#0" expanded="false" />
             <element signature="n#!!block;n#handleS#0" expanded="false" />
             <element signature="n#!!block;n#handleD#0" expanded="false" />
             <element signature="n#!!block;n#handleF#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
             <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="e#4639#4857#0" expanded="false" />
-            <element signature="e#5058#5276#0" expanded="false" />
-            <element signature="e#5564#5649#0" expanded="false" />
-            <element signature="e#5963#6173#0" expanded="false" />
+            <element signature="n#!!block;n#handleO#0" expanded="false" />
+            <element signature="e#5687#5905#0" expanded="false" />
+            <element signature="e#6193#6278#0" expanded="false" />
+            <element signature="e#6795#7005#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleI#0" expanded="false" />
             <element signature="n#!!block;n#handleX#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#7487#7930#0" expanded="false" />
-            <element signature="e#7984#8421#0" expanded="false" />
-            <element signature="e#8503#8985#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9156#9593#0" expanded="false" />
+            <element signature="e#9675#10157#0" expanded="false" />
             <element signature="n#!!block;n#handleB#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -928,7 +1107,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -959,7 +1153,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,10 +1217,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/makeShapes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hullstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makeShapes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="336" column="37" lean-forward="true" selection-start-line="336" selection-start-column="37" selection-end-line="336" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleS#0" expanded="false" />
+            <element signature="n#!!block;n#handleD#0" expanded="false" />
+            <element signature="n#!!block;n#handleF#0" expanded="false" />
+            <element signature="n#!!block;n#handleZ#0" expanded="false" />
+            <element signature="n#!!block;n#handleL#0" expanded="false" />
+            <element signature="e#5151#5369#0" expanded="false" />
+            <element signature="e#5570#5788#0" expanded="false" />
+            <element signature="e#6076#6161#0" expanded="false" />
+            <element signature="e#6678#6888#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9032#9469#0" expanded="false" />
+            <element signature="e#9551#10033#0" expanded="false" />
+            <element signature="n#!!block;n#handleB#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makeShapes2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!block;n#designateXandY#0" expanded="false" />
+            <element signature="n#!!block;n#handleA#0" expanded="false" />
+            <element signature="n#!!block;n#handleS#0" expanded="false" />
+            <element signature="n#!!block;n#handleD#0" expanded="false" />
+            <element signature="n#!!block;n#handleF#0" expanded="false" />
+            <element signature="n#!!block;n#handleP#0" expanded="false" />
+            <element signature="n#!!block;n#handleO#0" expanded="false" />
+            <element signature="e#5687#5905#0" expanded="false" />
+            <element signature="e#6193#6278#0" expanded="false" />
+            <element signature="e#6795#7005#0" expanded="false" />
+            <element signature="n#!!block;n#borderLines#0" expanded="false" />
+            <element signature="n#!!block;n#handleI#0" expanded="false" />
+            <element signature="n#!!block;n#handleX#0" expanded="false" />
+            <element signature="n#!!block;n#handleC#0" expanded="false" />
+            <element signature="n#!!block;n#handleG#0" expanded="false" />
+            <element signature="n#!!block;n#handleH#0" expanded="false" />
+            <element signature="e#9156#9593#0" expanded="false" />
+            <element signature="e#9675#10157#0" expanded="false" />
+            <element signature="n#!!block;n#handleB#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/properties.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="190">
+          <caret line="428" column="7" lean-forward="false" selection-start-line="428" selection-start-column="4" selection-end-line="428" selection-end-column="7" />
           <folding>
             <element signature="e#272#757#0" expanded="false" />
             <element signature="e#790#881#0" expanded="false" />
@@ -1024,94 +1315,38 @@
             <element signature="n#!!block;n#initializeTank#0" expanded="false" />
             <element signature="e#9746#10223#0" expanded="false" />
             <element signature="n#!!block;n#makeHeadImage#0" expanded="false" />
-            <element signature="n#!!block;n#rotateAndCache#0" expanded="false" />
             <element signature="n#!!block;n#drawRotated#0" expanded="false" />
-            <element signature="n#!!block;n#draw#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hullstyle.css">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playground.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="406" column="1" lean-forward="false" selection-start-line="406" selection-start-column="1" selection-end-line="406" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeShapes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="405" column="45" lean-forward="false" selection-start-line="405" selection-start-column="45" selection-end-line="405" selection-end-column="45" />
+        <state relative-caret-position="136">
+          <caret line="933" column="28" lean-forward="true" selection-start-line="933" selection-start-column="28" selection-end-line="933" selection-end-column="28" />
           <folding>
-            <element signature="e#89#214#0" expanded="false" />
-            <element signature="e#215#247#0" expanded="false" />
-            <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleA#0" expanded="false" />
-            <element signature="n#!!block;n#handleS#0" expanded="false" />
-            <element signature="n#!!block;n#handleD#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
-            <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleO#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#5299#5781#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
-            <element signature="n#!!block;n#handleB#0" expanded="false" />
+            <element signature="e#24#246#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo02#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo03#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01#0" expanded="false" />
+            <element signature="n#!!block;n#setEqualTo01b#0" expanded="false" />
+            <element signature="n#!!block;n#intersects#0" expanded="false" />
             <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#init#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeShapes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeShapes2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="156" column="33" lean-forward="false" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!block;n#designateXandY#0" expanded="false" />
-            <element signature="n#!!block;n#handleS#0" expanded="false" />
-            <element signature="n#!!block;n#handleD#0" expanded="false" />
-            <element signature="n#!!block;n#handleF#0" expanded="false" />
-            <element signature="n#!!block;n#handleZ#0" expanded="false" />
-            <element signature="n#!!block;n#handleP#0" expanded="false" />
-            <element signature="n#!!block;n#handleL#0" expanded="false" />
-            <element signature="e#4639#4857#0" expanded="false" />
-            <element signature="e#5058#5276#0" expanded="false" />
-            <element signature="e#5564#5649#0" expanded="false" />
-            <element signature="e#5963#6173#0" expanded="false" />
-            <element signature="n#!!block;n#handleX#0" expanded="false" />
-            <element signature="n#!!block;n#finish#0" expanded="false" />
-            <element signature="e#7487#7930#0" expanded="false" />
-            <element signature="e#7984#8421#0" expanded="false" />
-            <element signature="e#8503#8985#0" expanded="false" />
-            <element signature="n#!!block;n#move#0" expanded="false" />
-            <element signature="n#!!block;n#handleB#0" expanded="false" />
-            <element signature="n#!!block;n#reConfigure#0" expanded="false" />
-            <element signature="n#!!block;n#writeBetter#0" expanded="false" />
+            <element signature="n#!!block;n#reConfigureb#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTankList#0" expanded="false" />
+            <element signature="n#!!block;n#initializeTank#0" expanded="false" />
+            <element signature="n#!!block;n#draw#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#secondTry#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
           </folding>
         </state>
       </provider>
